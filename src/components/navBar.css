@@ -1,0 +1,35 @@
+.sidebarNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    position: relative;
+}
+
+.menu-layer{
+    background-color: pink;
+    opacity:0;
+    position: relative;
+}
+
+.sidebarNavigationOverlay{
+    background-color: aqua;
+    opacity:0;
+    position: relative;
+}
+
+.box-home{
+    background-color: aqua;
+}
+
+.nav-links{
+    border-radius: 50%;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    text-justify:center;
+
+}
