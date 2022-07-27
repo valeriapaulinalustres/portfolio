@@ -2,6 +2,12 @@ import React from 'react';
 import { useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { gsap } from 'gsap';
+import {AiOutlineClose} from 'react-icons/ai';
+import {ImWoman} from 'react-icons/im';
+import {ImHome} from 'react-icons/im';
+import {RiNewspaperLine} from 'react-icons/ri';
+import {FiMail} from 'react-icons/fi';
+import {CgMenuGridR} from 'react-icons/cg'
 import './navBar.css'
 
 
@@ -9,6 +15,7 @@ function NavBar(props) {
 
   const { menu, setMenu } = props
 
+  //-----------------links hover and navlink style----------------------
   const mouseEnter = ({ currentTarget }) => {
     gsap.to(currentTarget, { color: "#ce2f56" });
   };
@@ -29,29 +36,31 @@ function NavBar(props) {
         color: '#000000',
       }
 
-  //-----------------------------
+  //-----------------------------NavBar animation------------------
 
-  let sidebarMenu = useRef(null);
-  let sidebarMenuOverlay = useRef(null);
+  let linksContainer = useRef(null);
+  let x = useRef(null);
   let menuLayer = useRef(null);
   const menuTimeline = useRef();
 
   useEffect(() => {
     menuTimeline.current = gsap.timeline({ paused: true });
     menuTimeline.current.fromTo(
-      [sidebarMenuOverlay, menuLayer, sidebarMenu],
+      [x, menuLayer, linksContainer],
       {
         duration: 0,
         y: 0,
-        opacity: 0
+        opacity: 0,
+        
 
       },
       {
         duration: 0.75,
-        y: 100,
+        y: 50,
         ease: 'power3.inOut',
         stagger: 0.3,
-        opacity: 1
+        opacity: 1,
+       
         // {
         // amount: 2
         //},
@@ -72,7 +81,8 @@ function NavBar(props) {
         y: 100,
         ease: 'elastic',
         stagger: 0.3,
-        opacity: 1
+        opacity: 1,
+        
         // {
         // amount: 2
         //},
@@ -88,20 +98,18 @@ function NavBar(props) {
   return (
     <div>
       <div
-        className="sidebarNavigationOverlay"
-        ref={el => (sidebarMenuOverlay = el)}
+        className="x"
+        ref={el => (x = el)}
         onClick={() => setMenu(false)}
-      ><button>X</button></div>
-      <div className="menu-layer" ref={el => (menuLayer = el)}>
-        <nav className="sidebarNavigation" ref={el => (sidebarMenu = el)}>
-          <NavLink to="/" className="nav-links box-home" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}>HOME</NavLink>
-          <NavLink to="/about" className="nav-links" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}>ABOUT</NavLink>
-          <NavLink to="/cv" className="nav-links" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}>CV</NavLink>
-          <NavLink to="/projects" className="nav-links" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}>PROJECTS</NavLink>
-          <NavLink to="/contact" className="nav-links" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}>CONTACT</NavLink>
+      ><button className='xButton'><AiOutlineClose /></button></div>
+      <div className="menu-layer" ref={el => (menuLayer = el)}>.</div>
+      <nav className="linksContainer" ref={el => (linksContainer = el)}>
+          <NavLink to="/" className="nav-links box-home rosa" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><ImHome className='navBar-icons' /></NavLink>
+          <NavLink to="/about" className="nav-links amarillo" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><ImWoman className='navBar-icons' /></NavLink>
+          <NavLink to="/cv" className="nav-links verde" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><RiNewspaperLine className='navBar-icons' /></NavLink>
+          <NavLink to="/projects" className="nav-links celeste" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><CgMenuGridR className='navBar-icons' /></NavLink>
+          <NavLink to="/contact" className="nav-links lila" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><FiMail className='navBar-icons' /></NavLink>
         </nav>
-      </div>
-
     </div>
   )
 }
@@ -115,8 +123,8 @@ import gsap from 'gsap';
 
 
 const SidebarNav = props => {
-  let sidebarMenu = useRef(null);
-  let sidebarMenuOverlay = useRef(null);
+  let linksContainer = useRef(null);
+  let x = useRef(null);
   let menuLayer = useRef(null);
   const menuTimeline = useRef();
 
@@ -125,7 +133,7 @@ const SidebarNav = props => {
   useEffect(() => {
     menuTimeline.current = gsap.timeline({ paused: true });
     menuTimeline.current.fromTo(
-      [sidebarMenuOverlay, menuLayer, sidebarMenu],
+      [x, menuLayer, linksContainer],
       {
         duration: 0,
         x: '100%'
@@ -153,13 +161,13 @@ const SidebarNav = props => {
   return (
     <>
       <div
-        className="sidebarNavigationOverlay"
-        ref={el => (sidebarMenuOverlay = el)}
+        className="x"
+        ref={el => (x = el)}
         onClick={() => setMenuState(false)}
       ></div>
       <div className="menu-wrapper">
         <div className="menu-layer" ref={el => (menuLayer = el)}></div>
-        <nav className="sidebarNavigation" ref={el => (sidebarMenu = el)}>
+        <nav className="linksContainer" ref={el => (linksContainer = el)}>
           <div className="sidebar-top">
             <div className="links-wrapper">
               <Link className="menu-link" to="/">
@@ -222,7 +230,7 @@ export default withRouter(SidebarNav);
 /*
  menuTimeline.current = gsap.timeline({ paused: true });
     menuTimeline.current.fromTo(
-      [sidebarMenuOverlay, menuLayer, sidebarMenu, (".nav-links")],
+      [x, menuLayer, linksContainer, (".nav-links")],
       {
         duration: 0,
         x: '100%',

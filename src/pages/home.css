@@ -1,0 +1,195 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #88AB8A;
+
+}
+
+.photoButtonText-home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.skills-home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+
+}
+
+.text-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.ButtonText-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 10px;
+    
+}
+
+.text-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cvMailButtons-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.buttons-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.cv-home{
+    
+    width: 80px;
+height: 80px;
+margin: 10px;
+border-radius: 5px;
+cursor: pointer;
+background-color: white;
+color: var(--verde);
+opacity: 0;
+border: none;
+
+}
+
+.mail-home{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: var(--verde);
+    opacity: 0;
+    border: none;
+}
+
+.buttonSkills-home{
+    background-color: white;
+    color: var(--verde);
+    font-size: 20px;
+    font-weight: bold;
+    width: 80px;
+height: 80px;
+border-radius: 5px;
+margin: 10px;
+cursor: pointer;
+opacity: 0;
+border: none;
+
+}
+
+.img-home{
+    width: 500px;
+    height: 500px;
+    
+    margin: 10px;
+   
+   
+}
+
+.photo-home{
+    opacity: 0;
+}
+
+.icons-home{
+    width: 40px;
+    height: 40px;
+   
+    
+}
+
+.circle-home{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-home{
+    margin: 0px 5px;
+}
+.opacity{
+    opacity: 0;
+}
+
+.pdfLink{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.im-home{
+    opacity: 0;
+    color: black;
+}
+
+.job-home{
+    opacity: 0;  
+    color: black; 
+}
+
+@media only screen and (max-width:500px) {
+    .img-home{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .buttons-home{
+ 
+        flex-direction: row;
+       
+    
+    }
+
+    .skills-home{
+       
+        margin: 20px;
+    }
+    
+    
+}

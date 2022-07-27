@@ -2,7 +2,9 @@ import React from 'react'
 
 function CV() {
   return (
-    <div>CV</div>
+    <div>
+      cv
+    </div>
   )
 }
 

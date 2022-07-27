@@ -1,0 +1,122 @@
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9AEAC;
+}
+
+.projects-title{
+    margin: 30px 10px;
+}
+
+.projectsBox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projectBox{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow:  8px 8px 13px #b49290,
+    -8px -8px 13px #D9AEAC;
+             
+}
+
+.img-project-container{
+width: 400px;
+height: 300px;
+background-color: green;
+overflow: hidden;
+border-radius: 10px;
+
+
+}
+
+
+
+.projectName-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 400px;
+    height: 50px;
+    padding: 5px;
+    background-color: white;
+    padding: 5px;
+    
+    
+}
+
+.project-button{
+    background-color: var(--lila);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+   
+   
+
+}
+
+.plus{
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+.modal{
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+   
+
+}
+
+.window{
+    background: #fff;
+    border-radius: 10px;
+    border: 5px solid var(--verdeClaro);
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.3rem;
+
+}
+
+.x-projects{
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    background-color: var(--verde);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    align-self: flex-end;
+}

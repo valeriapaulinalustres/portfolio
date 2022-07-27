@@ -1,35 +1,130 @@
-.sidebarNavigation{
+
+
+.linksContainer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    opacity:0;
-    position: relative;
+    align-items: flex-start;
+background-color: var(--rosa);
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 250px;
 }
 
 .menu-layer{
-    background-color: pink;
-    opacity:0;
-    position: relative;
+    background-color: var(--lila);
+   position: absolute;
+   z-index: 5;
+   width: 100%;
+   height: 60px;
 }
 
-.sidebarNavigationOverlay{
-    background-color: aqua;
-    opacity:0;
-    position: relative;
+.x{
+    background-color: var(--verdeClaro);
+    width: 100%;
+ display: block;
+    position: absolute;
+    z-index: 10;
+  
+}
+
+.xButton{
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rosa);
+    color: white;
+    border: 1px solid white
 }
 
 .box-home{
-    background-color: aqua;
+    background-color: gold;
 }
 
 .nav-links{
-    border-radius: 50%;
+    
     background-color: blue;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     text-align: center;
     text-decoration: none;
-    text-justify:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+   
+    
 
+
+}
+
+.rosa{
+    border-radius: 50%;
+ 
+    background: radial-gradient(at top left, #cc7ba1, #f15bb5);
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: context-menu;
+}
+
+.amarillo{
+    border-radius: 50%;
+ 
+    background: radial-gradient(at top left, #c7af96, #fee440);
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: context-menu;
+}
+
+.verde{
+    border-radius: 50%;
+ 
+    background: radial-gradient(at top left, #9ebdaa, #00f5d4);
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: context-menu;
+}
+
+.celeste{
+    border-radius: 50%;
+ 
+    background: radial-gradient(at top left, #86aec2, #00bbf9);
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: context-menu;
+}
+
+.lila{
+    border-radius: 50%;
+ 
+    background: radial-gradient(at top left, #a88eb8, #9b5de5);
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: context-menu;
+}
+
+.navBar-icons{
+    width: 40px;
+    height: 40px;
+    color: white
+}
+@media only screen and (max-width:500px) {
+.nav-links{
+
+    width: 60px;
+    height: 60px;
+}
 }

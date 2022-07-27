@@ -1,0 +1,92 @@
+.footer-container{
+    background-color: var(--verdeClaro);
+}
+
+.copyright-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--verde);
+    padding: 20px;
+}
+
+.overCopyright-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks-footer{
+    margin-bottom: 10px;
+}
+
+.icon-footer{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+.linkGithub-footer{
+    text-decoration: none;
+    color: black;
+}
+
+.linksFooter-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 5px;
+   
+}
+
+.linkLinkedin-footer{
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.iconMail-footer{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: var(--lila);
+  
+}
+
+.linkedin{
+    color: #72808C;
+}
+
+.cv-footer{
+    background-color: var(--rosa);
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    width: 60px;
+}
+
+.justify-text{
+    text-align: center;
+    margin: 5px;
+}
+
+@media only screen and (max-width:500px) {
+.overCopyright-container{
+    
+    flex-direction: column;
+  
+    
+}
+}

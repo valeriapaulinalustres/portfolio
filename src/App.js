@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './app.css'
 
 // styles
 //import './style.scss';
@@ -12,6 +13,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 const App = () => {
   
@@ -28,6 +30,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
