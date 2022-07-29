@@ -3,7 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--rosa);
+   
+}
+
+.projects-section{
     background-color: #D9AEAC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
 }
 
 .projects-title{
@@ -26,9 +36,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    margin: 15px;
+    margin: 20px;
     box-shadow:  8px 8px 13px #b49290,
     -8px -8px 13px #D9AEAC;
+opacity: 0;
              
 }
 
@@ -54,7 +65,7 @@ border-radius: 10px;
     height: 50px;
     padding: 5px;
     background-color: white;
-    padding: 5px;
+   
     
     
 }
@@ -93,7 +104,7 @@ border-radius: 10px;
 .window{
     background: #fff;
     border-radius: 10px;
-    border: 5px solid var(--verdeClaro);
+    border: 5px solid var(--verde);
     box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
     box-sizing: content-box;
     display: flex;
@@ -104,19 +115,114 @@ border-radius: 10px;
     overflow: hidden;
     position: relative;
     width: 100%;
-    padding: 20px;
+    
     font-size: 1.3rem;
 
 }
 
 .x-projects{
-    color: #ffffff;
+    color: var(--verde);
     height: 30px;
     width: 30px;
-    background-color: var(--verde);
+    background-color: white;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
     border: none;
     align-self: flex-end;
+    border: 3px solid var(--verde);
+    cursor: pointer;
+}
+
+.window-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 20px;
+}
+
+.window-description{
+text-align: center;
+margin: 10px 0px;
+}
+
+.window-header{
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    margin-bottom: 10px;
+}
+
+.window-list{
+    margin: 10px 0px;
+
+}
+
+.freelance-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    background-color: white;
+    opacity: 1;
+    height: 500px;
+    width: 100%;
+}
+.mail-projects{
+    width: 100px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--rosa);
+    color: white;
+    border: none;
+    opacity: 0;
+}
+.freelance-textMail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px ;
+}
+
+.freelance-text{
+    opacity: 0;
+}
+
+.freelance-text2{
+    opacity: 1;
+}
+
+@media only screen and (max-width:500px) {
+.projectBox{
+    
+    margin: 20px 2px;
+    
+             
+}
+
+.img-project-container{
+    width: 300px;
+    height: 200px;
+   
+    
+    
+    }
+    .projectName-container{
+      
+        width: 300px;
+        
+        
+        
+    }
+    
 }

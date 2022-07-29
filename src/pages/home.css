@@ -4,6 +4,14 @@
     justify-content: center;
     align-items: center;
     background-color: #88AB8A;
+}
+
+.home-container-sectionOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 
 }
 
@@ -70,8 +78,8 @@
 
 .cv-home{
     
-    width: 80px;
-height: 80px;
+    width: 100px;
+height: 50px;
 margin: 10px;
 border-radius: 5px;
 cursor: pointer;
@@ -83,8 +91,8 @@ border: none;
 }
 
 .mail-home{
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 50px;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -99,8 +107,8 @@ border: none;
     color: var(--verde);
     font-size: 20px;
     font-weight: bold;
-    width: 80px;
-height: 80px;
+    width: 100px;
+height: 50px;
 border-radius: 5px;
 margin: 10px;
 cursor: pointer;
@@ -150,9 +158,9 @@ border: none;
 
 .pdfLink{
     text-decoration: none;
-    color: white;
+    color: var(--verde);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -165,6 +173,15 @@ border: none;
 .job-home{
     opacity: 0;  
     color: black; 
+}
+
+.home-container-sectionTwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rosa);
+    width:100%;
 }
 
 @media only screen and (max-width:500px) {

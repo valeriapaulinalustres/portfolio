@@ -10,6 +10,7 @@ background-color: var(--rosa);
     z-index: 3;
     width: 100%;
     height: 250px;
+    border-bottom: 5px solid var(--lila);
 }
 
 .menu-layer{
@@ -64,7 +65,7 @@ background-color: var(--rosa);
 .rosa{
     border-radius: 50%;
  
-    background: radial-gradient(at top left, #cc7ba1, #f15bb5);
+    background: radial-gradient(at top left, #6f8b70, #88AB8A);
     -ms-border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -75,7 +76,7 @@ background-color: var(--rosa);
 .amarillo{
     border-radius: 50%;
  
-    background: radial-gradient(at top left, #c7af96, #fee440);
+    background: radial-gradient(at top left, #e9e3ad, #fcf6bd);
     -ms-border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -86,7 +87,7 @@ background-color: var(--rosa);
 .verde{
     border-radius: 50%;
  
-    background: radial-gradient(at top left, #9ebdaa, #00f5d4);
+    background: radial-gradient(at top left, #abb892, #BCCAA1);
     -ms-border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -97,7 +98,7 @@ background-color: var(--rosa);
 .celeste{
     border-radius: 50%;
  
-    background: radial-gradient(at top left, #86aec2, #00bbf9);
+    background: radial-gradient(at top left, #5a6f70, #698283);
     -ms-border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -108,7 +109,7 @@ background-color: var(--rosa);
 .lila{
     border-radius: 50%;
  
-    background: radial-gradient(at top left, #a88eb8, #9b5de5);
+    background: radial-gradient(at top left, #9b7b8d, #AF8B9F);
     -ms-border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;

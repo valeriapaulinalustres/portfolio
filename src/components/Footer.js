@@ -12,8 +12,8 @@ function Footer() {
         <div className='footer-container'>
             <div className='overCopyright-container'>
                 <div className='linksFooter-container'>
-                    <button className='cv-footer'><Link to="./cv-Valeria-Lustres-Frontend-React.pdf" target="_blank" rel="noopener noreferrer" download="cv-Valeria-Lustres-Frontend-React.pdf" className='pdfLink'>
-                        <HiOutlineDocumentDownload className='icons-home'></HiOutlineDocumentDownload>CV
+                    <button className='cv-footer'><Link to="./cv-Valeria-Lustres-Frontend-React.pdf" target="_blank" rel="noopener noreferrer" download="cv-Valeria-Lustres-Frontend-React.pdf" className='pdfLinkFooter'>
+                        <HiOutlineDocumentDownload className='icons-cv-footer'></HiOutlineDocumentDownload>CV
                     </Link></button>
                     <Link to="https://www.linkedin.com/in/valeria-paulina-lustres/" className='linkLinkedin-footer'><BsLinkedin className='icon-footer linkedin' /></Link>
                     <Link to="https://github.com/valeriapaulinalustres" className='linkGithub-footer'><BsGithub className='icon-footer' /></Link>

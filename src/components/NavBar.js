@@ -27,7 +27,7 @@ function NavBar(props) {
     isActive
       ? {
         color: '#fff',
-        background: '#ff7396',
+        background: '#995856',
         borderRadius: 8,
         paddingLeft: 6,
         paddingRight: 6,

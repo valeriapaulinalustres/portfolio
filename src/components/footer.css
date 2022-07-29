@@ -68,6 +68,21 @@
 .linkedin{
     color: #72808C;
 }
+.pdfLinkFooter{
+    color: white;
+    text-decoration: none;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.icons-cv-footer{
+    width: 40px;
+    height: 40px;
+}
 
 .cv-footer{
     background-color: var(--rosa);
