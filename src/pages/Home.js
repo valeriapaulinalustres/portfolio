@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { FiMail } from 'react-icons/fi';
+import { FaGraduationCap } from 'react-icons/fa'
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 import './home.css';
 import { TextPlugin } from 'gsap/TextPlugin.js';
@@ -20,7 +21,7 @@ function Home() {
     gsap.registerPlugin(TextPlugin);
 
     gsap.to("h1", {
-      duration: 10,
+      duration: 5,
       text: {
         value: "Valeria Paulina Lustres",
         padSpace: true,
@@ -89,48 +90,48 @@ function Home() {
       })
 
       .to(home("h1"), {
-        duration: 2,
+        duration: 1.5,
         opacity: 1,
 
       }, "-=0.5")
 
       .to(home(".mail-home"), {
-        duration: 2,
+        duration: 1.5,
         rotate: 360,
         opacity: 1,
-      }, "-=1")
+      }, "-=1.5")
 
       .to(home(".job-home"), {
-        duration: 5,
+        duration: 3,
         opacity: 1,
         scale: 1,
         translateY: 30,
-      }, "-=2.5")
+      }, "-=1.5")
 
       .to(home(".buttonSkills-home"), {
-        duration: 2,
+        duration: 1.5,
         scale: 1.5,
         opacity: 1,
-      }, "-=2.5")
+      }, "-=1.5")
 
       .to(home(".photo-home"), {
-        duration: 2,
+        duration: 1.5,
         opacity: 1,
       }, "-=1")
 
       .to(home(".cv-home"), {
-        duration: 3,
+        duration: 1.5,
         opacity: 1,
-      }, "-=2")
+      }, "-=1.5")
 
       .to(home(".mail-home"), {
-        duration: 2,
+        duration: 1.5,
         backgroundColor: "#fcf6bd",
         color: "#88AB8A",
       }, "-=1")
 
       .to(home(".buttonSkills-home"), {
-        duration: 3,
+        duration: 1.5,
         rotate: 360,
         backgroundColor: "#AF8B9F",
         color: "#ffffff"
@@ -154,24 +155,21 @@ function Home() {
       }, "-=1")
 
       .to(home(".buttonSkills-home"), {
-        duration: 3,
+        duration: 1.5,
         backgroundColor: "#fcf6bd",
         color: "#88AB8A"
       }, "-=0.5")
 
       .to(home(".cv-home"), {
-        duration: 2,
+        duration: 1.5,
         backgroundColor: "#D9AEAC",
         scale: 1
       }, "-=2")
 
-      .to(home(".photo-home"), {
-        duration: 2,
-        rotateY: 360,
-      }, "-=1")
+
 
       .to(home(".job-home"), {
-        duration: 2,
+        duration: 1.5,
         translateY: -5,
       }, "-=1")
 
@@ -279,64 +277,71 @@ function Home() {
 
       </section>
       <section className='home-container-sectionTwo'>
-        <div>
+        <div className="about-left-container">
           <h2>About me</h2>
           <p>Who I am?</p>
-          <p>passionate, doctor, team working, multiculture, soft skills</p>
+          <p className='aboutMe-text'>passionate, doctor, team working, multiculture, soft skillsfd jksdakjf sadfsdfsd afsdf sad fsd fsad fas df sdf sadf sda fsd fsdfdsfasdjkfhksajdh fjdshkfhsadkjhf kjashdkjfh sdkjhfuiewh uifsf jsdb kjsdkj hkudshkf hdsjkfhiu shfsdhf iusdh fiusdfisdiuhdsiusdhfuis hf dsiuh fsdh jak</p>
+
           <div>
-            <div>
-              <h3>TECHO</h3>
-              <p>Collaborating as Frontend React and Backend Developer</p>
+            <FaGraduationCap className='icon-footer' />
+            <p>I'm currently studying English and Backend.</p>
+          </div>
+
+          <div>
+            <div className='job-about'>
+              <div className='logo-jobTitle-about'>
+                <img src="./logos/techo.png" className='techo-icon'></img>
+                <h3>2022 - current</h3>
+              </div>
+              <p className='description-job'>I'm collaborating as Frontend, React and Backend Developer</p>
             </div>
 
-            <div>
-              <h3>CODERHOUSE</h3>
-              <p>Working as Javascript tutr teacher</p>
+            <div className='job-about'>
+              <div className='logo-jobTitle-about'>
+                <img src="./logos/coderhouse.png" className='coder-icon'></img>
+                <h3 >2022 - current</h3>
+              </div>
+              <p className='description-job'>I'm working as Javascript tutor teacher</p>
             </div>
 
-            <div>
-              <h3>Studying</h3>
-              <p>Backend</p>
-              <p>English</p>
 
-            </div>
           </div>
         </div>
 
-        <div>
-          <h2>My certifications</h2>
+        <div className="about-right-container">
+          <h2 className='certifications-title'>My certifications</h2>
           <div>
 
-            <div>
-              <div>
+            <div className='certification-about'>
+              <div className='logo-title-about'>
                 <img src="/logos/coder.png" alt="Coderhouse" className='icon-footer' ></img>
-                <h3>Web Development</h3>
+                <h3>Web Development | 2021</h3>
               </div>
-              <p>HTML, CSS, </p>
+              <p className='description-certification'>HTML, CSS, SASS, Bootstrap</p>
             </div>
 
-            <div>
-              <div>
+            <div className='certification-about'>
+              <div className='logo-title-about'>
                 <img src="/logos/coder.png" alt="Coderhouse" className='icon-footer' ></img>
-                <h3>Javascript</h3>
+                <h3>Javascript | 2022</h3>
               </div>
-              <p>HTML, CSS, </p>
+              <p className='description-certification'>JavaScript, Node Js </p>
             </div>
 
-            <div>
-              <div>
+            <div className='certification-about'>
+              <div className='logo-title-about'>
                 <img src="/logos/coder.png" alt="Coderhouse" className='icon-footer' ></img>
-                <h3>React js</h3>
+                <h3>React js | 2022</h3>
               </div>
-              <p>HTML, CSS, </p>
+              <p className='description-certification'>React Js, Firebase, React icons, Styled components, Material UI</p>
             </div>
 
-            <div>
-              <div>
+            <div className='certification-about'>
+              <div className='logo-title-about'>
                 <img src="/logos/efset.png" alt="EF SET" className='icon-footer' ></img>
                 <h3>EF SET</h3>
               </div>
-              <p>HTML, CSS, </p>
+              <p className='description-certification'>B1 - Upper Intermediate </p>
             </div>
 
           </div>

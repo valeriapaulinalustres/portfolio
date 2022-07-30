@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: #88AB8A;
+
 }
 
 .home-container-sectionOne{
@@ -11,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 800px;
    
 
 }
@@ -178,10 +180,110 @@ border: none;
 .home-container-sectionTwo{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--rosa);
     width:100%;
+    padding: 100px 0px;
+    height: 500px;
+}
+
+.certifications-title{
+    margin-bottom: 30px;
+}
+
+.logo-title-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    
+    background-color: var(--lila);
+   
+}
+
+.certification-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #c7a09e;
+    margin: 20px 0px;
+    width: 600px;
+
+    
+}
+
+.description-certification{
+    padding: 10px;
+   
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+
+   
+}
+
+.coder-icon{
+    height: 40px;
+    margin: 5px;
+}
+
+.techo-icon{
+    height: 40px;
+    margin: 5px;
+}
+
+.job-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #c7a09e;
+    margin-top:20px;
+    width: 600px;
+
+}
+
+.logo-jobTitle-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    
+    background-color: var(--lila);
+}
+
+.description-job{
+    padding: 10px;
+   
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.about-left-container, .about-right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rebeccapurple;
+    height: 100%;
+
+}
+
+.aboutMe-text{
+    width: 600px;
 }
 
 @media only screen and (max-width:500px) {

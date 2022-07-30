@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--verde);
 
 }
 
@@ -11,7 +12,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 10px;
+   
+}
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .titleLink-contact{
@@ -28,4 +37,57 @@
     align-items: center;
     margin-top:20px;
     margin-bottom: 200px;
+}
+
+.contact-contactTitle{
+    margin-bottom: 30px;
+}
+
+
+
+.second-section-contact{
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+
+.first-section-contact{
+   
+   
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.third-section-contact{
+    
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+.contact-card {
+    margin: 40px;
+}
+
+.contact-card-title{
+    margin: 20px;
+}
+
+.contact-card-text{
+    margin: 20px;
 }
