@@ -278,16 +278,16 @@ function Home() {
       </section>
       <section className='home-container-sectionTwo'>
         <div className="about-left-container">
-          <h2>About me</h2>
-          <p>Who I am?</p>
+          <h2 className='aboutMe-title'>About me</h2>
+          <p className='who-about'>Who am I?</p>
           <p className='aboutMe-text'>passionate, doctor, team working, multiculture, soft skillsfd jksdakjf sadfsdfsd afsdf sad fsd fsad fas df sdf sadf sda fsd fsdfdsfasdjkfhksajdh fjdshkfhsadkjhf kjashdkjfh sdkjhfuiewh uifsf jsdb kjsdkj hkudshkf hdsjkfhiu shfsdhf iusdh fiusdfisdiuhdsiusdhfuis hf dsiuh fsdh jak</p>
 
           <div>
             <FaGraduationCap className='icon-footer' />
-            <p>I'm currently studying English and Backend.</p>
+            <p className='currentlyStudying-about'>I'm currently studying English and Backend.</p>
           </div>
 
-          <div>
+          <div className='job-container-about'>
             <div className='job-about'>
               <div className='logo-jobTitle-about'>
                 <img src="./logos/techo.png" className='techo-icon'></img>
@@ -310,7 +310,7 @@ function Home() {
 
         <div className="about-right-container">
           <h2 className='certifications-title'>My certifications</h2>
-          <div>
+          <div className='certification-container-about'>
 
             <div className='certification-about'>
               <div className='logo-title-about'>

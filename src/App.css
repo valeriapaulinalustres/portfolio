@@ -5,9 +5,15 @@
 
 h1{
   margin: 15px 5px;
-  color: #f6c6cd;
-  opacity: 0,
+  color: var(--rosa);
+  opacity: 0;
+  font-family: var(--h1);
+  font-size: 50px;
+  width: 500px;
+  
 }
+
+
 
 :root{
   --rosa: #D9AEAC;
@@ -22,6 +28,17 @@ h1{
 --verdeOscuro: #00f5d4;
 --celesteOscuro: #00bbf9;
 --lilaOscuro: #9b5de5;
+
+
+--h1: 'Dancing Script', cursive;
+--bloque: 'Josefin Sans', sans-serif;
+--titulo1: 'Raleway', sans-serif;
+--titulo2: 'Lora', serif;
+--titulo3: 'Nunito', sans-serif;
+--cursiva1: 'Great Vibes', cursive;
+--cursiva2: 'Handlee', cursive;
+--titulos: 'Square Peg', cursive;
+ 
 }
 
 

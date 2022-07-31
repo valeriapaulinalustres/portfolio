@@ -135,6 +135,7 @@ border: none;
 .icons-home{
     width: 40px;
     height: 40px;
+    font-family: var(--titulo1);
    
     
 }
@@ -170,11 +171,17 @@ border: none;
 .im-home{
     opacity: 0;
     color: black;
+    font-family: var(--titulo1);
 }
 
 .job-home{
     opacity: 0;  
     color: black; 
+    font-family: var(--titulo1);
+}
+
+.buttonSkills-home{
+font-family: var(--titulo1);
 }
 
 .home-container-sectionTwo{
@@ -182,14 +189,19 @@ border: none;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    
     background-color: var(--rosa);
     width:100%;
     padding: 100px 0px;
-    height: 500px;
+  
+    
 }
 
 .certifications-title{
     margin-bottom: 30px;
+    font-family: var(--titulos);
+    font-size: 60px;
+    margin-top: 20px;
 }
 
 .logo-title-about{
@@ -204,6 +216,20 @@ border: none;
    
 }
 
+.aboutMe-title{
+    font-family: var(--titulos);
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.who-about{
+    font-family: var(--titulo1);
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+   
+}
+
 .certification-about{
     display: flex;
     flex-direction: column;
@@ -212,19 +238,23 @@ border: none;
     background-color: white;
     border: 1px solid black;
     box-shadow: 5px 5px 5px #c7a09e;
-    margin: 20px 0px;
-    width: 600px;
+    margin-top: 20px;
+  
 
     
+}
+
+.certification-container-about{
+    width: 100%;
 }
 
 .description-certification{
     padding: 10px;
    
-    width: 100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 500px;
+   
 
    
 }
@@ -248,7 +278,7 @@ border: none;
     border: 1px solid black;
     box-shadow: 5px 5px 5px #c7a09e;
     margin-top:20px;
-    width: 600px;
+    width: 100%;
 
 }
 
@@ -269,7 +299,7 @@ border: none;
     width: 100px;
     display: flex;
     flex-direction: row;
-    width: 500px;
+    width: 100%;
 }
 
 .about-left-container, .about-right-container{
@@ -277,25 +307,42 @@ border: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: rebeccapurple;
+    width: 40%;
     height: 100%;
+   
 
+}
+
+.job-container-about{
+    width: 100%;
+    
 }
 
 .aboutMe-text{
-    width: 600px;
+    width: 100%;
+    font-family: var(--titulo1);
+    font-size: 20px;
+    text-align: left;
 }
+
+.currentlyStudying-about{
+    font-family: var(--titulo1);
+    font-size: 20px;
+}
+
+
 
 @media only screen and (max-width:500px) {
     .img-home{
         width: 200px;
         height: 200px;
-        border-radius: 50%;
+
         margin: 10px;
     }
 
     h1{
-        font-size: 30px;
+        font-size: 20px;
+        width: 90%;
     }
 
     .buttons-home{
@@ -309,6 +356,33 @@ border: none;
        
         margin: 20px;
     }
+
+    .home-container-sectionTwo{
+        
+        flex-direction: column;
+       
+        
+    }
+
+    .about-left-container, .about-right-container{
+     
+        width: 90%;
+       
     
+    }
     
+    .job-home{
+        font-size: 20px;
+    }
+
+    .cv-home{
+width: 80px;
+    }
+    .mail-home{
+        width: 80px;
+    }
+
+    .buttonSkills-home{
+        width: 80px;
+    }
 }

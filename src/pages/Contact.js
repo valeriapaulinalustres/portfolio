@@ -132,7 +132,7 @@ function Contact() {
     <div className='contact-container'>
       <section className='title-contact' ref={contactTitleRef}>
         <h2 className='contact-contactTitle'>Contact</h2>
-        <h3>Let's work together</h3>
+        <h3 className='workTogether-contact'>Let's work together!</h3>
       </section>
 
       <section className='first-section-contact sections' ref={oneContactRef}>
@@ -146,7 +146,7 @@ function Contact() {
 
         <div className='contact-card   ' >
           <div className='titleLink-contact'>
-            <p className='contact-card-title fadeInContactOne'>Send me a message</p>
+            <p className='contact-card-title fadeInContactOne'>Send me a message:</p>
             <Link to="https://wa.me/5491121714493/?text=Hola%20Valeria" target="_blank"
               className="linkIconWa-footer fadeInContactOne"><img src="https://www.vectorlogo.zone/logos/whatsapp/whatsapp-icon.svg" alt="whatsapp" className='icon-footer'></img></Link>
           </div>
@@ -157,7 +157,7 @@ function Contact() {
       <section className='second-section-contact' ref={twoContactRef}>
         <div className='contact-card   '>
           <div className='titleLink-contact '>
-            <p className='contact-card-title fadeInContactTwo'>Visit my Linkedin</p>
+            <p className='contact-card-title fadeInContactTwo'>Visit my Linkedin:</p>
             <Link to="https://www.linkedin.com/in/valeria-paulina-lustres/" className='linkLinkedin-footer fadeInContactTwo'><BsLinkedin className='icon-footer linkedin' /></Link>
           </div>
           <p className='contact-card-text fadeInContactTwo'>https://www.linkedin.com/in/valeria-paulina-lustres/</p>
@@ -165,7 +165,7 @@ function Contact() {
 
         <div className='contact-card  '>
           <div className='titleLink-contact '>
-            <p className='contact-card-title fadeInContactTwo'>Watch my code</p>
+            <p className='contact-card-title fadeInContactTwo'>Watch my code:</p>
             <Link to="https://github.com/valeriapaulinalustres" className='linkGithub-footer fadeInContactTwo'><BsGithub className='icon-footer' /></Link>
           </div>
           <p className='contact-card-text fadeInContactTwo'>https://github.com/valeriapaulinalustres</p>
@@ -182,7 +182,7 @@ function Contact() {
         </div>
 
         <div className='contact-card '>
-          <p className='contact-card-title fadeInContactThree'>Download my Resume</p>
+          <p className='contact-card-title fadeInContactThree'>Download my Resume:</p>
           <button className='cv-footer fadeInContactThree'><Link to="./cv-Valeria-Lustres-Frontend-React.pdf" target="_blank" rel="noopener noreferrer" download="cv-Valeria-Lustres-Frontend-React.pdf" className='pdfLinkFooter'>
             <HiOutlineDocumentDownload className='icons-cv-footer'></HiOutlineDocumentDownload>CV
           </Link></button>

@@ -17,7 +17,10 @@
 }
 
 .projects-title{
-    margin: 30px 10px;
+    margin: 30px 10px 70px 10px;
+    font-family: var(--titulos);
+    font-size: 80px;
+
 }
 
 .projectsBox-container{
@@ -197,10 +200,16 @@ h4{
 
 .freelance-text{
     opacity: 0;
+    font-family: var(--titulo1);
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .freelance-text2{
     opacity: 1;
+    font-family: var(--titulos);
+    font-size: 55px;
+    margin: 30px 0px;
 }
 
 @media only screen and (max-width:500px) {
