@@ -27,7 +27,7 @@ function NavBar(props) {
     isActive
       ? {
         color: '#fff',
-        background: '#995856',
+        background: '#8babac',
         borderRadius: 8,
         paddingLeft: 6,
         paddingRight: 6,
@@ -105,10 +105,8 @@ function NavBar(props) {
       <div className="menu-layer" ref={el => (menuLayer = el)}>.</div>
       <nav className="linksContainer" ref={el => (linksContainer = el)}>
           <NavLink to="/" className="nav-links box-home rosa" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><ImHome className='navBar-icons' /></NavLink>
-          <NavLink to="/about" className="nav-links amarillo" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><ImWoman className='navBar-icons' /></NavLink>
-          <NavLink to="/cv" className="nav-links verde" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><RiNewspaperLine className='navBar-icons' /></NavLink>
-          <NavLink to="/projects" className="nav-links celeste" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><CgMenuGridR className='navBar-icons' /></NavLink>
-          <NavLink to="/contact" className="nav-links lila" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><FiMail className='navBar-icons' /></NavLink>
+          <NavLink to="/projects" className="nav-links lila" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><CgMenuGridR className='navBar-icons' /></NavLink>
+          <NavLink to="/contact" className="nav-links verde" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><FiMail className='navBar-icons' /></NavLink>
         </nav>
     </div>
   )

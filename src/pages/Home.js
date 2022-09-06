@@ -7,6 +7,8 @@ import { HiOutlineDocumentDownload } from 'react-icons/hi';
 import './home.css';
 import { TextPlugin } from 'gsap/TextPlugin.js';
 import { gsap } from 'gsap';
+import { useIntersection } from "react-use";
+
 
 
 
@@ -57,7 +59,7 @@ function Home() {
 
   };
 
-  //----------timeline animation
+  //----------timeline animation introduction------------------
 
   const tl2 = useRef();
   const homeRef = useRef();
@@ -102,6 +104,13 @@ function Home() {
       }, "-=1.5")
 
       .to(home(".job-home"), {
+        duration: 3,
+        opacity: 1,
+        scale: 1,
+        translateY: 30,
+      }, "-=1.5")
+
+      .to(home(".job-home2"), {
         duration: 3,
         opacity: 1,
         scale: 1,
@@ -173,6 +182,11 @@ function Home() {
         translateY: -5,
       }, "-=1")
 
+      .to(home(".job-home2"), {
+        duration: 1.5,
+        translateY: -5,
+      }, "-=1")
+
       .to(home(".buttonSkills-home"), {
         duration: 3,
         backgroundColor: "#ffffff",
@@ -197,6 +211,117 @@ function Home() {
   }, []);
 
 
+  //-----------animation on scroll one--------------------
+  const oneHomeRef = useRef();
+
+  const intersectionHomeOne = useIntersection(oneHomeRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+  });
+
+  const fadeInHomeOne = element => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: -80,
+      ease: "power4.out",
+      duration: 3,
+      stagger: {
+        amount: 0.6
+      }
+      
+    });
+  };
+
+  const fadeOutHomeOne = element => {
+    gsap.to(element, 1, {
+      opacity: 0,
+      y: -20,
+      ease: "power4.out",
+    });
+  };
+
+  intersectionHomeOne && intersectionHomeOne.intersectionRatio < 0.5
+    ? fadeOutHomeOne(".fadeInHomeOne")
+    : fadeInHomeOne(".fadeInHomeOne");
+
+  //---------------phrase animation----------
+
+  const phraseHomeRef = useRef();
+
+  const intersectionHomePhrase = useIntersection(phraseHomeRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+  });
+
+  const fadeInHomePhrase = element => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: -80,
+      ease: "power4.out",
+      duration: 3,
+      stagger: {
+        amount: 0.6
+      }
+    });
+  };
+
+  const fadeOutHomePhrase = element => {
+    gsap.to(element, 1, {
+      opacity: 0,
+      y: -20,
+      ease: "power4.out",
+    });
+  };
+
+  intersectionHomePhrase && intersectionHomePhrase.intersectionRatio < 0.5
+    ? fadeOutHomePhrase(".fadeInHomePhrase")
+    : fadeInHomePhrase(".fadeInHomePhrase");
+
+
+
+  //-----------animation on scroll section three--------------------
+  const threeHomeRef = useRef();
+  const threeHome = gsap.utils.selector(threeHomeRef);
+  const tl3 = useRef();
+
+
+
+  const intersectionHomeThree = useIntersection(threeHomeRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+  });
+
+  const fadeInHomeThree = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: -40,
+      ease: "power4.out",
+      
+      duration: 2,
+      stagger: {
+        amount: 5
+      }
+    });
+    
+
+  };
+
+
+  const fadeOutHomeThree = element => {
+    gsap.to(element, 1, {
+      opacity: 0,
+      y: -20,
+      ease: "power4.out",
+    });
+  };
+
+  intersectionHomeThree && intersectionHomeThree.intersectionRatio < 0.5
+    ? fadeOutHomeThree(".fadeInHomeThree")
+    : fadeInHomeThree(".fadeInHomeThree");
+
 
 
 
@@ -209,6 +334,7 @@ function Home() {
               <p className='im-home'>I'm</p>
               <h1></h1>
               <h2 className='job-home'>Frontend React Developer</h2>
+              <h2 className='job-home2'>UX/UI Designer</h2>
             </div>
             <div className='buttons-home'>
               <div className='cvMailButtons-home'>
@@ -276,32 +402,36 @@ function Home() {
         </div>
 
       </section>
-      <section className='home-container-sectionTwo'>
-        <div className="about-left-container">
-          <h2 className='aboutMe-title'>About me</h2>
-          <p className='who-about'>Who am I?</p>
-          <p className='aboutMe-text'>passionate, doctor, team working, multiculture, soft skillsfd jksdakjf sadfsdfsd afsdf sad fsd fsad fas df sdf sadf sda fsd fsdfdsfasdjkfhksajdh fjdshkfhsadkjhf kjashdkjfh sdkjhfuiewh uifsf jsdb kjsdkj hkudshkf hdsjkfhiu shfsdhf iusdh fiusdfisdiuhdsiusdhfuis hf dsiuh fsdh jak</p>
 
-          <div>
-            <FaGraduationCap className='icon-footer' />
-            <p className='currentlyStudying-about'>I'm currently studying English and Backend.</p>
+      <section className='home-container-sectionPhrase' ref={phraseHomeRef}>
+        <p className='phrase fadeInHomePhrase'>"The <span className='wo fadeInHomePhrase'>wo</span>man never knows he is capable until he tries"</p>
+      </section>
+      <section className='home-container-sectionTwo' ref={oneHomeRef}>
+        <div className="about-left-container">
+          <h2 className='aboutMe-title  fadeInHomeOne'>About me</h2>
+          <p className='who-about  fadeInHomeOne'>Who am I?</p>
+          <p className='aboutMe-text  fadeInHomeOne'>I am a Doctor who discoverd her passion: Frontend Development. I love studying to improve my skills. I enjoy working in a multi-culture team and solving problems. I'm very responsible and creative because innovation is the best!</p>
+
+          <div className='gorro-texto-home fadeInHomeOne '>
+            <FaGraduationCap className='icon-footer ' />
+            <p className='currentlyStudying-about '>I'm currently studying English and Backend.</p>
           </div>
 
-          <div className='job-container-about'>
-            <div className='job-about'>
+          <div className='job-container-about  '>
+            <div className='job-about fadeInHomeOne'>
               <div className='logo-jobTitle-about'>
                 <img src="./logos/techo.png" className='techo-icon'></img>
-                <h3>2022 - current</h3>
-              </div>
-              <p className='description-job'>I'm collaborating as Frontend, React and Backend Developer</p>
-            </div>
-
-            <div className='job-about'>
-              <div className='logo-jobTitle-about'>
-                <img src="./logos/coderhouse.png" className='coder-icon'></img>
                 <h3 >2022 - current</h3>
               </div>
-              <p className='description-job'>I'm working as Javascript tutor teacher</p>
+              <p className='description-job '>I'm collaborating as Frontend, React and Backend Developer</p>
+            </div>
+
+            <div className='job-about fadeInHomeOne '>
+              <div className='logo-jobTitle-about'>
+                <img src="./logos/coderhouse.png" className='coder-icon'></img>
+                <h3 className=''>2022 - current</h3>
+              </div>
+              <p className='description-job '>I'm working as Javascript tutor teacher</p>
             </div>
 
 
@@ -309,18 +439,18 @@ function Home() {
         </div>
 
         <div className="about-right-container">
-          <h2 className='certifications-title'>My certifications</h2>
+          <h2 className='certifications-title fadeInHomeOne'>My certifications</h2>
           <div className='certification-container-about'>
 
-            <div className='certification-about'>
-              <div className='logo-title-about'>
+            <div className='certification-about fadeInHomeOne'>
+              <div className='logo-title-about '>
                 <img src="/logos/coder.png" alt="Coderhouse" className='icon-footer' ></img>
-                <h3>Web Development | 2021</h3>
+                <h3 >Web Development | 2021</h3>
               </div>
-              <p className='description-certification'>HTML, CSS, SASS, Bootstrap</p>
+              <p className='description-certification '>HTML, CSS, SASS, Bootstrap</p>
             </div>
 
-            <div className='certification-about'>
+            <div className='certification-about fadeInHomeOne'>
               <div className='logo-title-about'>
                 <img src="/logos/coder.png" alt="Coderhouse" className='icon-footer' ></img>
                 <h3>Javascript | 2022</h3>
@@ -328,7 +458,7 @@ function Home() {
               <p className='description-certification'>JavaScript, Node Js </p>
             </div>
 
-            <div className='certification-about'>
+            <div className='certification-about fadeInHomeOne'>
               <div className='logo-title-about'>
                 <img src="/logos/coder.png" alt="Coderhouse" className='icon-footer' ></img>
                 <h3>React js | 2022</h3>
@@ -336,10 +466,18 @@ function Home() {
               <p className='description-certification'>React Js, Firebase, React icons, Styled components, Material UI</p>
             </div>
 
-            <div className='certification-about'>
+            <div className='certification-about fadeInHomeOne'>
+              <div className='logo-title-about'>
+                <img src="/logos/coder.png" alt="Coderhouse" className='icon-footer' ></img>
+                <h3><a href="https://www.coderhouse.com/certificados/62977d467fc107001a771947?lang=es" target="_blank" className='noLinkJob'>Frontend React Development Career | 2022</a> </h3>
+              </div>
+              <p className='description-certification'>Frontend Development, React JS</p>
+            </div>
+
+            <div className='certification-about fadeInHomeOne'>
               <div className='logo-title-about'>
                 <img src="/logos/efset.png" alt="EF SET" className='icon-footer' ></img>
-                <h3>EF SET</h3>
+                <h3><a href="https://www.efset.org/cert/P4i3hs" target="_blank" className='noLinkJob'>EF SET</a></h3>
               </div>
               <p className='description-certification'>B1 - Upper Intermediate </p>
             </div>
@@ -347,6 +485,34 @@ function Home() {
           </div>
 
         </div>
+
+
+
+      </section>
+      <section className='home-container-sectionThree' ref={threeHomeRef} >
+        <h2 className='certifications-title fadeInHomeThree '>My Experience</h2>
+        <div >
+          <h3 className='left experience-text   fadeInHomeThree '>More than 10 years ago I developed my first photography website 📷,</h3>
+          <h3 className='left experience-text  fadeInHomeThree'>but I am a Doctor 🩺 and I was working hard in "The End of the World" ⛰️...</h3>
+          <div className='right'>
+            <img src="./ushuaia.jpg" className='ushuaia fadeInHomeThree' ></img>
+          </div>
+
+          <h3 className='right experience-text  fadeInHomeThree'>...so I couldn't continue in IT development.</h3>
+
+          <h3 className='left experience-text  fadeInHomeThree'>In 2020 I was selected to join a team to work as a Frontend Developer Trainee.</h3>
+          <h3 className='left experience-text  fadeInHomeThree'>I studied hard and I got experience...</h3>
+          <h3 className='right experience-text  fadeInHomeThree'>...and I finally got my <a href="https://www.coderhouse.com/certificados/62977d467fc107001a771947?lang=es" target="_blank" className='noLink'>Frontend React Development Career Certification</a>  📜 in 2022.</h3>
+          <h3 className='left experience-text fadeInHomeThree '>I have designed and developed many projects. You can see 👀 some of them in <Link to="./projects" className='noLink'>"My Projects"</Link> section.</h3>
+          <h3 className='right experience-text  fadeInHomeThree'>Also you can download my resume <button className='cv-footer'><Link to="./cv-Valeria-Lustres-Frontend-React.pdf" target="_blank" rel="noopener noreferrer" download="cv-Valeria-Lustres-Frontend-React.pdf" className='pdfLinkFooter'>
+                        <HiOutlineDocumentDownload className='icons-cv-footer'></HiOutlineDocumentDownload>CV
+                    </Link></button> to read about my working experience in detail!</h3>
+          <h3 className='center experience-text fadeInHomeThree margin-top'>I believe perseveration is the key...</h3>
+          <h3 className='center experience-text  fadeInHomeThree pink'>...and you have to ❤️love what you do❤️.</h3>
+        </div>
+
+
+
 
 
 

@@ -48,8 +48,9 @@
 
 .workTogether-contact{
     font-family: var(--titulo1);
-    font-size: 60px;
+    font-size: 50px;
     color: white;
+    font-weight: lighter;
 }
 
 

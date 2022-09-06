@@ -10,9 +10,18 @@ h1{
   font-family: var(--h1);
   font-size: 50px;
   width: 500px;
+  text-shadow: 0.8px 0.8px 0.8px white;
   
 }
 
+h3{
+  font-family: var(--titulo1);
+}
+
+a{
+  text-decoration: none;
+  color: var(--verde);
+}
 
 
 :root{
@@ -21,7 +30,7 @@ h1{
   --verde: #88AB8A;
   --verdeClaro: #BCCAA1;
   --lila: #AF8B9F;
-  --celeste: #698283;
+  --celeste: #8babac;
 
   --rosaOscuro: #f15bb5;
   --amarilloOscuro: #fee440;
@@ -40,7 +49,11 @@ h1{
 --titulos: 'Square Peg', cursive;
  
 }
-
+/*
+cursiva2 es la imprenta aniñada
+titulo1 es la imprenta seria
+titulos es la cursiva linda de los títulos
+*/
 
 
 /*

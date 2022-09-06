@@ -68,9 +68,10 @@ border-radius: 10px;
     height: 50px;
     padding: 5px;
     background-color: white;
-   
-    
-    
+}
+
+.projectName-container h2{
+    font-size: 18px;
 }
 
 .project-button{
@@ -189,6 +190,7 @@ h4{
     color: white;
     border: none;
     opacity: 0;
+    box-shadow: 2px 2px 2px rgb(113, 119, 115);
 }
 .freelance-textMail-container{
     display: flex;

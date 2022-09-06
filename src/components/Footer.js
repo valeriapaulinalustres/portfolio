@@ -27,13 +27,13 @@ function Footer() {
                 </div>
                 <div className='text-footer'>
                     <p className='thanks-footer'>Thanks for visiting, have a nice day!</p>
-                    <p>(+549) 11 21714493</p>
-                    <p>valeriapaulinalustres@yahoo.com.ar</p>
+                    <p className='footer-text'>(+549) 11 21714493</p>
+                    <p className='footer-text'>valeriapaulinalustres@yahoo.com.ar</p>
                 </div>
             </div>
             <div className='copyright-container'>
-                <p className='justify-text'>Copyright</p>
-                <p className='justify-text'>Portfolio Features: React, JavaScript, CSS, HTML, GSAP, react-icons, NodeJs, Git, Github, Vercel, Figma, Vector Logo Zone.</p>
+                <p className='justify-text footer-text'>Copyright 2022</p>
+                <p className='justify-text footer-text'>Portfolio Features: React, JavaScript, CSS, HTML, GSAP, react-icons, NodeJs, Git, Github, Vercel, Figma, Vector Logo Zone.</p>
             </div>
 
         </div>
