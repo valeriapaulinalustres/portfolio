@@ -68,20 +68,9 @@ function Home() {
   // const aboutImgTwo = gsap.utils.selector(aboutImgTwoRef);
   // const aboutText = gsap.utils.selector(aboutTextRef);
 
+  
   useEffect(() => {
-    //  gsap.to(aboutTitle.current, { y: 80, duration: 3 });
-    //  gsap.registerPlugin(TextPlugin);
-    /*
-      gsap.to(".welcome", {
-        duration: 3,
-        text: {
-          value: "Bienvenidos a Mi Pastelería",
-          padSpace: true,
-        },
-        ease: "power2",
-        repeat: 2,
-      });
-  */
+ 
     tl2.current = gsap.timeline()
 
 
@@ -283,7 +272,7 @@ function Home() {
 
   //-----------animation on scroll section three--------------------
   const threeHomeRef = useRef();
-  const threeHome = gsap.utils.selector(threeHomeRef);
+
   const tl3 = useRef();
 
 
