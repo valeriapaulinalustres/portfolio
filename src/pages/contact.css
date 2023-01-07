@@ -40,14 +40,14 @@
 }
 
 .contact-contactTitle{
-    margin-bottom: 30px;
+   
     font-size: 80px;
     font-family: var(--titulos);
     font-weight: bold;
 }
 
 .workTogether-contact{
-    font-family: var(--titulo1);
+    font-family: var(--titulos);
     font-size: 50px;
     color: white;
     font-weight: lighter;
@@ -105,4 +105,84 @@
     font-family: var(--titulo1);
     font-size: 35px;
     color: black;
+}
+
+@media only screen and (max-width:500px) {
+  
+
+    .title-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:20px;
+        margin-bottom: 60px;
+    }
+    
+    .contact-contactTitle{
+
+        font-size: 30px;
+
+        font-weight: bold;
+    }
+    
+    .workTogether-contact{
+
+        font-size: 20px;
+        color: white;
+        font-weight: lighter;
+    }
+    
+    
+    
+    .second-section-contact{
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    
+    }
+    
+    
+    .first-section-contact{
+       
+       
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .third-section-contact{
+        
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    
+    }
+    
+    .contact-card {
+        margin: 20px 5px;
+    }
+    
+    .contact-card-title{
+        margin: 10px;
+        font-size: 30px;
+    }
+    
+    .contact-card-text{
+        margin: 10px;
+        font-size: 10px;
+        width: 100vw;
+        text-align: center;
+    }
 }

@@ -442,7 +442,7 @@ font-family: var(--titulo1);
 
     h1{
         font-size: 35px;
-        width: 95%;
+        width: 350px;
     }
 
     .buttons-home{
@@ -460,7 +460,7 @@ font-family: var(--titulo1);
     .home-container-sectionTwo{
         
         flex-direction: column;
-       
+       opacity: 1;
         
     }
 
@@ -486,7 +486,16 @@ width: 80px;
         width: 80px;
     }
 .home-container-sectionPhrase{
-    padding: 0 10px;
+    padding: 0 20px;
+}
+.phrase{
+text-align: center;
+}
+.wo{
+text-align: center;
+}
+.home-container-sectionThree{
+    padding: 0 20px;
 }
    
 }
