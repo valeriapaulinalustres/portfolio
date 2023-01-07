@@ -593,12 +593,12 @@ function Home() {
 
       <section className="home-container-sectionPhrase" ref={phraseHomeRef}>
         <p className="phrase fadeInHomePhrase">
-          "The <span className="wo fadeInHomePhrase">wo</span>man never knows
-          <span className="wo fadeInHomePhrase">s</span>he is capable until
+          "The <span className="wo fadeInHomePhrase">wo</span>man never knows {" "}
+          <span className="wo fadeInHomePhrase">s</span>he is capable until {" "}
           <span className="wo fadeInHomePhrase">s</span>he tries"
         </p>
       </section>
-      
+
       <section className="home-container-sectionTwo" ref={oneHomeRef}>
         <div className="about-left-container">
           <h2 className="aboutMe-title  fadeInHomeOne">About me</h2>

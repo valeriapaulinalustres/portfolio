@@ -213,6 +213,7 @@ h4{
     font-family: var(--titulo1);
     font-size: 40px;
     font-weight: bold;
+   
 }
 
 .freelance-text2{
@@ -220,6 +221,7 @@ h4{
     font-family: var(--titulos);
     font-size: 55px;
     margin: 30px 0px;
+   
 }
 
 @media only screen and (max-width:500px) {
@@ -245,8 +247,27 @@ h4{
         
     }
 
+   
+.freelance-text{
+width: 80vw;
+font-size: 30px;
+text-align: center;
+   
+}
+
+.freelance-text2{
+   
+ width: 80vw;  
+ font-size: 40px;
+ text-align: center;
+}
+    .window{
+        width: 90vw;
+        max-width: 90vw;
+    }
+
     .freelance-section{
-        padding: 0 10px;
+        height: 100vh;
     }
     
 }
