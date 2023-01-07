@@ -57,7 +57,7 @@
 
 .second-section-contact{
     background-color: white;
-    width: 100%;
+    width: 100vw;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -91,17 +91,17 @@
 }
 
 .contact-card {
-    margin: 40px;
+    margin: 40px 0px;
 }
 
 .contact-card-title{
-    margin: 20px;
+    margin: 20px 0px;
     font-family: var(--titulos);
     font-size: 60px;
 }
 
 .contact-card-text{
-    margin: 20px;
+    margin: 20px 0px;
     font-family: var(--titulo1);
     font-size: 35px;
     color: black;
@@ -136,7 +136,7 @@
     
     .second-section-contact{
         background-color: white;
-        width: 100%;
+        
         height: 100vh;
       
     
@@ -157,16 +157,16 @@
     }
     
     .contact-card {
-        margin: 20px 5px;
+        margin: 20px 0px;
     }
     
     .contact-card-title{
-        margin: 10px;
+        margin: 10px 0px;
         font-size: 45px;
     }
     
     .contact-card-text{
-        margin: 10px;
+        margin: 10px 0px;
         font-size: 20px;
         width: 100vw;
         text-align: center;

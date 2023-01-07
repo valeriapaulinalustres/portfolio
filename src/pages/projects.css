@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
+ 
 }
 
 .projects-title{
@@ -233,7 +234,7 @@ h4{
 }
 
 .img-project-container{
-    width: 300px;
+    width: 280px;
     height: 200px;
    
     
@@ -241,7 +242,7 @@ h4{
     }
     .projectName-container{
       
-        width: 300px;
+        width: 280px;
         
         
         
@@ -268,6 +269,7 @@ text-align: center;
 
     .freelance-section{
         height: 100vh;
+       
     }
     
 }
