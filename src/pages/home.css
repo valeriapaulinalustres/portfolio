@@ -127,8 +127,8 @@ box-shadow: 2px 2px 2px rgb(113, 119, 115);
 }
 
 .img-home{
-    width: 500px;
-    height: 500px;
+    width: 200px;
+    height: 200px;
     
     margin: 10px;
     border-radius: 10px;
@@ -214,12 +214,12 @@ font-family: var(--titulo1);
 
 .phrase{
     font-family: var(--titulos);
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .wo{
     font-family: var(--cursiva2);
-    font-size: 40px;
+    font-size: 30px;
     color: var(--verde);
 }
 
@@ -252,7 +252,7 @@ font-family: var(--titulo1);
     align-items: center;
     border-bottom: 1px solid black;
     width: 100%;
-    
+    border-radius: 10px;
     background-color: var(--lila);
    
 }
@@ -265,7 +265,7 @@ font-family: var(--titulo1);
 
 .who-about{
     font-family: var(--titulo1);
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     margin-bottom: 20px;
    
@@ -280,7 +280,7 @@ font-family: var(--titulo1);
     border: 1px solid black;
     box-shadow: 5px 5px 5px #c7a09e;
     margin-top: 20px;
-  
+    border-radius: 10px;
 
     
 }
@@ -322,6 +322,7 @@ font-family: var(--titulo1);
     box-shadow: 5px 5px 5px #c7a09e;
     margin-top:20px;
     width: 100%;
+    border-radius: 10px;
 
 }
 
@@ -332,7 +333,7 @@ font-family: var(--titulo1);
     align-items: center;
     border-bottom: 1px solid black;
     width: 100%;
-    
+    border-radius: 10px;
     background-color: var(--lila);
 }
 
@@ -366,7 +367,7 @@ font-family: var(--titulo1);
 .aboutMe-text{
     width: 100%;
     font-family: var(--cursiva2);
-    font-size: 30px;
+    font-size: 24px;
     text-align: left;
     margin: 10px 0px 10px 0px;
 
@@ -380,7 +381,7 @@ font-family: var(--titulo1);
 
 .currentlyStudying-about{
     font-family: var(--cursiva2);
-    font-size: 30px;
+    font-size: 24px;
     margin-left: 5px;
 }
 

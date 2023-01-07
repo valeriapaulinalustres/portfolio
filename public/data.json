@@ -1,0 +1,12 @@
+[
+    {"id": 1, "name": "Dulce Espera", "price": 5000, "img": "/src/assets/image/embarazada-blanco.jpg"},
+    {"id": 2, "name": "Recién Nacidos", "price": 5000, "img": "/src/assets/image/recien-nacido-canasta.jpg"},
+    {"id": 3, "name": "Bebes", "price": 5000, "img": "/src/assets/image/bebe-sentado.jpg"},
+    {"id": 4, "name": "Niños", "price": 5000, "img": "/src/assets/image/nene-manzana.jpg"},
+    {"id": 5, "name": "Teens", "price": 5000, "img": "/src/assets/image/teens-modelo.jpg"},
+    {"id": 6, "name": "Fine art", "price": 5000, "img": "/src/assets/image/fine-art-nena-chal.jpg"},
+    {"id": 7, "name": "Navidad", "price": 1000, "img": "/src/assets/image/bebe-navidad.jpg"},
+    {"id": 8, "name": "Bautismo", "price": 5000, "img": "/src/assets/image/recien-nacido-bautismo.jpg"},
+    {"id": 9, "name": "Comunion", "price": 5000, "img": "/src/assets/image/comunion-nene-primer-plano.jpg"},
+    {"id": 10,"name": "Escolares", "price": 7000, "img": "/src/assets/image/foto-escuela.jpg"}
+]

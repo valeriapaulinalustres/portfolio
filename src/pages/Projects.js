@@ -16,6 +16,8 @@ function Projects() {
   const [modalStatus, setModalStatus] = useState(false);
   const [modalCrud, setModalCrud] = useState(false);
   const [modalEpi, setModalEpi] = useState(false);
+  const [modalDulceEspera, setModalDulceEspera] = useState(false);
+  const [modalEcommercePupils, setModalEcommercePupils] = useState(false);
 
   //----card container animations-------
   const projectCardsRef = useRef();
@@ -193,7 +195,7 @@ function Projects() {
 
           <div className='projectBox'>
             <div className='img-project-container'>
-              <a href="https://valeria-paulina-photography.000webhostapp.com/" target="_blank">
+              <a href="http://valeria-paulina-photography-lustres.vercel.app/" target="_blank">
                 <img src="./favorita-nena-atardecer.jpg" width="120%" className='img-projects' onMouseEnter={onEnterImg} onMouseLeave={onLeaveImg}></img>
               </a>
             </div>
@@ -249,6 +251,7 @@ function Projects() {
               </div>
               <div className='window-text'>
                 <p className='window-description'>Malvina is a casual menswear brand which was born in Uruguay during COVID pandemic. </p>
+                <p className='red'>I am changing the database this days, so you won't be able to see any products in this site.</p>
                 <p className='window-features'>Features and technologies used:</p>
                 <ul className='window-list'>
                   <li>React Js</li>
@@ -359,6 +362,63 @@ function Projects() {
             </div>
           </div>}
 
+          <div className='projectBox'>
+            <div className='img-project-container'>
+              <a href="http://dulce-espera.vercel.app/"  target="_blank">
+                <img src="/pregnancy-desktop.jpg" width="100%" className='img-projects' onMouseEnter={onEnterImg} onMouseLeave={onLeaveImg}></img>
+              </a>
+            </div>
+            <div className='projectName-container'>
+              <h2>Dulce Espera App - React + Typescript</h2>
+              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalDulceEspera(true)}><HiPlus className='plus' /></button>
+            </div>
+          </div>
+          {modalDulceEspera && <div className='modal'>
+            <div className='window'>
+              <div className='window-header'>
+                <button className='x-projects' onClick={() => setModalDulceEspera(false)}>X</button>
+                <h4>Dulce Espera App</h4>
+              </div>
+              <div className='window-text'>
+                <p className='window-description'>This is a drug finder and its relationship with pregnancy. Information obtained from the FDA</p>
+                <p className='window-features'>Features and technologies used:</p>
+                <ul className='window-list'>
+                  <li>React Js</li>
+                  <li>CSS</li>
+                  <li>Typescript</li>
+                  <li>FDA Open Api</li>
+                </ul>
+              </div>
+            </div>
+          </div>}
+
+          <div className='projectBox'>
+            <div className='img-project-container'>
+              <a href="http://ecommerce-javascript.vercel.app/"  target="_blank">
+                <img src="/ecommerce.jpg" width="180%" className='img-projects' onMouseEnter={onEnterImg} onMouseLeave={onLeaveImg}></img>
+              </a>
+            </div>
+            <div className='projectName-container'>
+              <h2>Ecommerce for students - Javascript</h2>
+              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalEcommercePupils(true)}><HiPlus className='plus' /></button>
+            </div>
+          </div>
+          {modalEcommercePupils && <div className='modal'>
+            <div className='window'>
+              <div className='window-header'>
+                <button className='x-projects' onClick={() => setModalEcommercePupils(false)}>X</button>
+                <h4>Ecommerce Javascript Vanilla</h4>
+              </div>
+              <div className='window-text'>
+                <p className='window-description'>This is an easy ecommerce in Javascript Vanilla for my students</p>
+                <p className='window-features'>Features and technologies used:</p>
+                <ul className='window-list'>
+                  <li>Javascript</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+          </div>}
 
         </div>
 

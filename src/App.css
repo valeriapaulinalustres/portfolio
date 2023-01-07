@@ -48,6 +48,10 @@ a{
 --cursiva2: 'Handlee', cursive;
 --titulos: 'Square Peg', cursive;
  
+
+--carousel-height: 400px;
+--carousel-item-height: var(--carousel-height)* .80 ;
+--carousel-item-width: var(carousel-item-height) * 4 / 5 ;
 }
 /*
 cursiva2 es la imprenta aniñada

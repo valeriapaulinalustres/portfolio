@@ -7,7 +7,8 @@ import {ImWoman} from 'react-icons/im';
 import {ImHome} from 'react-icons/im';
 import {RiNewspaperLine} from 'react-icons/ri';
 import {FiMail} from 'react-icons/fi';
-import {CgMenuGridR} from 'react-icons/cg'
+import {CgMenuGridR} from 'react-icons/cg';
+import {CgWebsite} from 'react-icons/cg';
 import './navBar.css'
 
 
@@ -105,7 +106,7 @@ function NavBar(props) {
       <div className="menu-layer" ref={el => (menuLayer = el)}>.</div>
       <nav className="linksContainer" ref={el => (linksContainer = el)}>
           <NavLink to="/" className="nav-links box-home rosa" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><ImHome className='navBar-icons' /></NavLink>
-          <NavLink to="/projects" className="nav-links lila" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><CgMenuGridR className='navBar-icons' /></NavLink>
+          <NavLink to="/projects" className="nav-links lila" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><CgWebsite className='navBar-icons' /></NavLink>
           <NavLink to="/contact" className="nav-links verde" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} style={styleLinks} onClick={() => setMenu(false)}><FiMail className='navBar-icons' /></NavLink>
         </nav>
     </div>

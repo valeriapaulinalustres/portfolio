@@ -1,6 +1,6 @@
 .footer-container{
     background-color: var(--verdeClaro);
-    padding: 20px;
+    padding: 5px;
 }
 
 .copyright-container{
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     border-top: 1px solid var(--verde);
-    padding: 20px;
+    padding: 5px;
 }
 
 .overCopyright-container{
@@ -35,12 +35,13 @@
 
 .footer-text{
     font-family: var(--titulo1);
+    font-size: 14px;
     
 }
 
 .icon-footer{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
 }
 
