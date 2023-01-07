@@ -160,7 +160,8 @@ function Contact() {
             <p className='contact-card-title fadeInContactTwo'>Visit my Linkedin:</p>
             <Link to="https://www.linkedin.com/in/valeria-paulina-lustres/" className='linkLinkedin-footer fadeInContactTwo'><BsLinkedin className='icon-footer linkedin' /></Link>
           </div>
-          <p className='contact-card-text fadeInContactTwo'>https://www.linkedin.com/in/valeria-paulina-lustres/</p>
+          <p className='contact-card-text fadeInContactTwo responsiveInvisible'>https://www.linkedin.com/in/valeria-paulina-lustres/</p>
+          
         </div>
 
         <div className='contact-card  '>
@@ -168,7 +169,7 @@ function Contact() {
             <p className='contact-card-title fadeInContactTwo'>Watch my code:</p>
             <Link to="https://github.com/valeriapaulinalustres" className='linkGithub-footer fadeInContactTwo'><BsGithub className='icon-footer' /></Link>
           </div>
-          <p className='contact-card-text fadeInContactTwo'>https://github.com/valeriapaulinalustres</p>
+          <p className='contact-card-text fadeInContactTwo responsiveInvisible'>https://github.com/valeriapaulinalustres</p>
         </div>
       </section>
 
