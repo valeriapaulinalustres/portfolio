@@ -143,35 +143,35 @@ function Home() {
   //-----------animation on scroll one--------------------
   const oneHomeRef = useRef();
 
-  const intersectionHomeOne = useIntersection(oneHomeRef, {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5,
-  });
+  // const intersectionHomeOne = useIntersection(oneHomeRef, {
+  //   root: null,
+  //   rootMargin: "0px",
+  //   threshold: 0.5,
+  // });
 
-  const fadeInHomeOne = (element) => {
-    gsap.to(element, 1, {
-      opacity: 1,
-      y: -80,
-      ease: "power4.out",
-      duration: 3,
-      stagger: {
-        amount: 0.6,
-      },
-    });
-  };
+  // const fadeInHomeOne = (element) => {
+  //   gsap.to(element, 1, {
+  //     opacity: 1,
+  //     y: -80,
+  //     ease: "power4.out",
+  //     duration: 3,
+  //     stagger: {
+  //       amount: 0.6,
+  //     },
+  //   });
+  // };
 
-  const fadeOutHomeOne = (element) => {
-    gsap.to(element, 1, {
-      opacity: 0,
-      y: -20,
-      ease: "power4.out",
-    });
-  };
+  // const fadeOutHomeOne = (element) => {
+  //   gsap.to(element, 1, {
+  //     opacity: 0,
+  //     y: -20,
+  //     ease: "power4.out",
+  //   });
+  // };
 
-  intersectionHomeOne && intersectionHomeOne.intersectionRatio < 0.5
-    ? fadeOutHomeOne(".fadeInHomeOne")
-    : fadeInHomeOne(".fadeInHomeOne");
+  // intersectionHomeOne && intersectionHomeOne.intersectionRatio < 0.5
+  //   ? fadeOutHomeOne(".fadeInHomeOne")
+  //   : fadeInHomeOne(".fadeInHomeOne");
 
   //---------------phrase animation----------
 
