@@ -441,8 +441,8 @@ font-family: var(--titulo1);
     }
 
     h1{
-        font-size: 38px;
-        width: 100%;
+        font-size: 35px;
+        width: 95%;
     }
 
     .buttons-home{
@@ -485,6 +485,8 @@ width: 80px;
     .buttonSkills-home{
         width: 80px;
     }
-
+.home-container-sectionPhrase{
+    padding: 0 10px;
+}
    
 }
