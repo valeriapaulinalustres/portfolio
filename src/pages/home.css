@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
+   height: 100vh;
     background-color: #88AB8A;
     width: 100%;
     background: linear-gradient(to bottom, #88AB8A , white);
@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .skills-home{
@@ -54,16 +54,10 @@
     justify-content: center;
     align-items: center;
     width: 350px;
-    margin: 10px;
+    margin:50px;
     
 }
 
-.text-home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .cvMailButtons-home{
     display: flex;
@@ -137,10 +131,10 @@ box-shadow: 2px 2px 2px rgb(113, 119, 115);
    
 }
 
-.photo-home{
+/* .photo-home{
     opacity: 0;
     margin-left: 10px;
-}
+} */
 
 .icons-home{
     width: 40px;
@@ -440,15 +434,15 @@ font-family: var(--titulo1);
 
 @media only screen and (max-width:500px) {
     .img-home{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
 
-        margin: 10px;
+        margin: 0px;
     }
 
     h1{
-        font-size: 20px;
-        width: 90%;
+        font-size: 38px;
+        width: 100%;
     }
 
     .buttons-home{
@@ -491,4 +485,6 @@ width: 80px;
     .buttonSkills-home{
         width: 80px;
     }
+
+   
 }
