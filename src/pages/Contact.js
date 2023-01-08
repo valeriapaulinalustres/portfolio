@@ -116,11 +116,6 @@ function Contact() {
     ? fadeOutContactThree(".fadeInContactThree")
     : fadeInContactThree(".fadeInContactThree");
 
-
-
-
-
-
   useEffect(() => {
     //-----title animation------
     gsap.to(contactTitleRef.current, { y: 80, duration: 5, delay: 1, });
@@ -139,18 +134,30 @@ function Contact() {
         <div className='contact-card ' >
           <div className='titleLink-contact '>
             <p className='contact-card-title fadeInContactOne'>Mail me:</p>
-            <Link to="mailto:valeriapaulinalustres@yahoo.com.ar?subject=contacto%20desde%20web" target="_blank" className='linkGithub-footer fadeInContactOne'><HiMail className="iconMail-footer" /></Link>
+            <Link to="mailto:valeriapaulinalustres@yahoo.com.ar?subject=contacto%20desde%20web"
+              target="_blank"
+              className='linkGithub-footer fadeInContactOne'>
+              <HiMail className="iconMail-footer" /></Link>
           </div>
-          <p className='contact-card-text fadeInContactOne'>valeriapaulinalustres@yahoo.com.ar</p>
+          <p className='contact-card-text fadeInContactOne'>
+            valeriapaulinalustres@yahoo.com.ar
+          </p>
         </div>
 
         <div className='contact-card   ' >
           <div className='titleLink-contact'>
             <p className='contact-card-title fadeInContactOne'>Send me a message:</p>
             <Link to="https://wa.me/5491121714493/?text=Hola%20Valeria" target="_blank"
-              className="linkIconWa-footer fadeInContactOne"><img src="https://www.vectorlogo.zone/logos/whatsapp/whatsapp-icon.svg" alt="whatsapp" className='icon-footer'></img></Link>
+              className="linkIconWa-footer fadeInContactOne">
+              <img src="https://www.vectorlogo.zone/logos/whatsapp/whatsapp-icon.svg"
+                alt="whatsapp"
+                className='icon-footer'>
+              </img>
+            </Link>
           </div>
-          <p className='contact-card-text fadeInContactOne'>(+549) 11 21714493</p>
+          <p className='contact-card-text fadeInContactOne'>
+            (+549) 11 21714493
+          </p>
         </div>
       </section>
 
@@ -158,18 +165,29 @@ function Contact() {
         <div className='contact-card   '>
           <div className='titleLink-contact '>
             <p className='contact-card-title fadeInContactTwo'>Visit my Linkedin:</p>
-            <Link to="https://www.linkedin.com/in/valeria-paulina-lustres/" className='linkLinkedin-footer fadeInContactTwo'><BsLinkedin className='icon-footer linkedin' /></Link>
+            <Link to="https://www.linkedin.com/in/valeria-paulina-lustres/"
+              className='linkLinkedin-footer fadeInContactTwo'>
+              <BsLinkedin className='icon-footer linkedin' />
+            </Link>
           </div>
-          <p className='contact-card-text fadeInContactTwo responsiveInvisible'>https://www.linkedin.com/in/valeria-paulina-lustres/</p>
-          
+          <p className='contact-card-text fadeInContactTwo responsiveInvisible'>
+            https://www.linkedin.com/in/valeria-paulina-lustres/
+          </p>
         </div>
 
         <div className='contact-card  '>
           <div className='titleLink-contact '>
-            <p className='contact-card-title fadeInContactTwo'>Watch my code:</p>
-            <Link to="https://github.com/valeriapaulinalustres" className='linkGithub-footer fadeInContactTwo'><BsGithub className='icon-footer' /></Link>
+            <p className='contact-card-title fadeInContactTwo'>
+              Watch my code:
+            </p>
+            <Link to="https://github.com/valeriapaulinalustres"
+              className='linkGithub-footer fadeInContactTwo'>
+              <BsGithub className='icon-footer' />
+            </Link>
           </div>
-          <p className='contact-card-text fadeInContactTwo responsiveInvisible'>https://github.com/valeriapaulinalustres</p>
+          <p className='contact-card-text fadeInContactTwo responsiveInvisible'>
+            https://github.com/valeriapaulinalustres
+          </p>
         </div>
       </section>
 
@@ -177,16 +195,33 @@ function Contact() {
         <div className='contact-card  ' >
           <div className='titleLink-contact  '>
             <p className='contact-card-title fadeInContactThree'>My country:</p>
-            <img src='/logos/argentine-flag.png' alt='Argentine flag' className='icon-footer fadeInContactThree'></img>
+            <img
+              src='/logos/argentine-flag.png'
+              alt='Argentine flag'
+              className='icon-footer fadeInContactThree'>
+            </img>
           </div>
-          <p className='contact-card-text fadeInContactThree'>Argentine</p>
+          <p className='contact-card-text fadeInContactThree'>
+            Argentine
+          </p>
         </div>
 
         <div className='contact-card '>
-          <p className='contact-card-title fadeInContactThree'>Download my Resume:</p>
-          <button className='cv-footer fadeInContactThree'><Link to="./cv-Valeria-Lustres-Frontend-React.pdf" target="_blank" rel="noopener noreferrer" download="cv-Valeria-Lustres-Frontend-React.pdf" className='pdfLinkFooter'>
-            <HiOutlineDocumentDownload className='icons-cv-footer'></HiOutlineDocumentDownload>CV
-          </Link></button>
+          <p className='contact-card-title fadeInContactThree'>
+            Download my Resume:
+          </p>
+          <button className='cv-footer fadeInContactThree'>
+            <Link
+              to="./cv-Valeria-Lustres-Frontend-React.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="cv-Valeria-Lustres-Frontend-React.pdf"
+              className='pdfLinkFooter'>
+              <HiOutlineDocumentDownload className='icons-cv-footer'>
+              </HiOutlineDocumentDownload>
+              CV
+            </Link>
+          </button>
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useRef} from "react";
+import { useEffect, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FiMail } from "react-icons/fi";
 import { FaGraduationCap } from "react-icons/fa";
@@ -8,7 +8,7 @@ import "./home.css";
 import { TextPlugin } from "gsap/TextPlugin.js";
 import { gsap } from "gsap";
 import { useIntersection } from "react-use";
-import Carousel from "../components/Carousel";
+
 
 function Home() {
 
@@ -37,7 +37,7 @@ function Home() {
   const tl = useRef();
 
   const handleSkills = () => {
-    
+
     tl.current = gsap.timeline().to(skills(".opacity"), {
       duration: 0.5,
       opacity: 1,
@@ -47,8 +47,8 @@ function Home() {
       rotate: 360,
     });
     // gsap.to(skillsRef.current, { opacity:1, duration:3, stagger:0.5});
-   // setSkillsOn(true)
-   gsap.to(".buttonSkills-home", { opacity:0});
+    // setSkillsOn(true)
+    gsap.to(".buttonSkills-home", { opacity: 0 });
   };
 
   //----------timeline animation introduction------------------
@@ -281,7 +281,7 @@ function Home() {
                 </NavLink>
               </div>
               <button className="buttonSkills-home" onClick={handleSkills}>
-              {/* {skillsOn ? "buttonSkills-home-dislayNone" : "buttonSkills-home"} */}
+                {/* {skillsOn ? "buttonSkills-home-dislayNone" : "buttonSkills-home"} */}
                 Skills
               </button>
             </div>

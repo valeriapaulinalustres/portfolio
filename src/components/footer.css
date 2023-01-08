@@ -1,9 +1,9 @@
-.footer-container{
+.footer-container {
     background-color: var(--verdeClaro);
     padding: 5px;
 }
 
-.copyright-container{
+.copyright-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     padding: 5px;
 }
 
-.overCopyright-container{
+.overCopyright-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,67 +20,63 @@
     padding: 20px;
 }
 
-.text-footer{
+.text-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.thanks-footer{
+.thanks-footer {
     margin-bottom: 10px;
     font-family: var(--cursiva2);
     font-size: 25px;
 }
 
-.footer-text{
+.footer-text {
     font-family: var(--titulo1);
     font-size: 14px;
-    
 }
 
-.icon-footer{
+.icon-footer {
     width: 30px;
     height: 30px;
     margin: 5px;
 }
 
-.linkGithub-footer{
+.linkGithub-footer {
     text-decoration: none;
     color: black;
 }
 
-.linksFooter-container{
+.linksFooter-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 10px 5px;
-   
 }
 
-.linkLinkedin-footer{
+.linkLinkedin-footer {
     text-decoration: none;
     align-items: center;
-
 }
 
-.iconMail-footer{
+.iconMail-footer {
     width: 50px;
     height: 50px;
     margin: 5px;
     color: black;
-  
 }
 
-.linkedin{
+.linkedin {
     color: black;
 }
-.pdfLinkFooter{
+
+.pdfLinkFooter {
     color: white;
     text-decoration: none;
-   
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -88,12 +84,13 @@
     width: 50px;
     height: 50px;
 }
-.icons-cv-footer{
+
+.icons-cv-footer {
     width: 40px;
     height: 40px;
 }
 
-.cv-footer{
+.cv-footer {
     background-color: var(--rosa);
     border-radius: 5px;
     border: none;
@@ -101,19 +98,17 @@
     width: 60px;
 }
 
-.justify-text{
+.justify-text {
     text-align: center;
     margin: 5px;
 }
 
 @media only screen and (max-width:500px) {
-.overCopyright-container{
-    
-    flex-direction: column;
-  
-    
-}
-.thanks-footer{
-    text-align: center;
-}
+    .overCopyright-container {
+        flex-direction: column;
+    }
+
+    .thanks-footer {
+        text-align: center;
+    }
 }
