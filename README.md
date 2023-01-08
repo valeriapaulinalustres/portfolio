@@ -1,4 +1,4 @@
-# valeria_paulina_photography-Lustres
+# My portfolio
 I´m Valeria Paulina Lustres. This is my portfolio. I´m a Front End Developer, Doctor and backend student. I hope you like it!
 
 
