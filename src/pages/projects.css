@@ -21,6 +21,8 @@
     margin: 30px 10px 70px 10px;
     font-family: var(--titulos);
     font-size: 80px;
+    color: white;
+    font-weight: 200;
 
 }
 
@@ -200,7 +202,14 @@ h4{
     border: none;
     opacity: 0;
     box-shadow: 2px 2px 2px rgb(113, 119, 115);
+    transition: 2s;
 }
+
+.mail-projects:hover{
+    border-radius: 50%;
+    background-color: var(--verdeClaro);
+}
+
 .freelance-textMail-container{
     display: flex;
     flex-direction: column;

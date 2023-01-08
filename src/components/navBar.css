@@ -1,4 +1,10 @@
-
+.navbar-container{
+    right: 0;
+      width: 100vw;
+      position: fixed;
+      top: 50px;
+     z-index: 2000;
+  }
 
 .linksContainer{
     display: flex;
@@ -56,11 +62,16 @@ background-color: var(--rosa);
     justify-content: center;
     align-items: center;
     margin: 5px;
-   
+ 
     
 
 
 }
+
+.nav-links:hover .navBar-icons{
+    color: var(--amarillo);
+}
+
 
 .rosa{
     border-radius: 50%;

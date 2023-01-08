@@ -43,7 +43,8 @@
    
     font-size: 80px;
     font-family: var(--titulos);
-    font-weight: bold;
+    font-weight: 200;
+    color: white;
 }
 
 .workTogether-contact{

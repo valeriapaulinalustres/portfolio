@@ -2,16 +2,23 @@
     width: 30px;
     height: 30px;
     color: white;
+    transition: 2s;
+}
+
+.menu-icon:hover{
+   rotate: 360deg;
 }
 
 .menu-button{
-    background-color: var(--rosa);
+   background-color: transparent;
     border-radius: 5px;
     border-radius: 5px;
    position: fixed;
     z-index: 20;
     right: 0;
     margin-right: 10px;
-   
+   top: 5px;
+   border: none;
    
 }
+

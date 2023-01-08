@@ -5,12 +5,12 @@
 
 h1{
   margin: 10px 3px;
-  color: var(--rosa);
+  color: white;
   opacity: 0;
   font-family: var(--h1);
   font-size: 50px;
   width: 500px;
-  text-shadow: 0.8px 0.8px 0.8px white;
+  text-shadow: 0.8px 0.8px 0.8px var(--rosaOscuro);
   
 }
 

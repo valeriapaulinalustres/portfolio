@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef} from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FiMail } from "react-icons/fi";
 import { FaGraduationCap } from "react-icons/fa";
@@ -11,6 +11,7 @@ import { useIntersection } from "react-use";
 import Carousel from "../components/Carousel";
 
 function Home() {
+
   //---h1 animation -----
   useEffect(() => {
     //register Text Plugin
@@ -18,7 +19,7 @@ function Home() {
 
     gsap.to("h1", {
       //   delay:1,
-      duration: 5,
+      duration: 6,
       // speed: 0.5,
       text: {
         value: "Valeria Paulina Lustres",
@@ -36,6 +37,7 @@ function Home() {
   const tl = useRef();
 
   const handleSkills = () => {
+    
     tl.current = gsap.timeline().to(skills(".opacity"), {
       duration: 0.5,
       opacity: 1,
@@ -45,6 +47,8 @@ function Home() {
       rotate: 360,
     });
     // gsap.to(skillsRef.current, { opacity:1, duration:3, stagger:0.5});
+   // setSkillsOn(true)
+   gsap.to(".buttonSkills-home", { opacity:0});
   };
 
   //----------timeline animation introduction------------------
@@ -277,6 +281,7 @@ function Home() {
                 </NavLink>
               </div>
               <button className="buttonSkills-home" onClick={handleSkills}>
+              {/* {skillsOn ? "buttonSkills-home-dislayNone" : "buttonSkills-home"} */}
                 Skills
               </button>
             </div>

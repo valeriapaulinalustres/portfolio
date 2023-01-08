@@ -40,6 +40,7 @@
 
 }
 
+
 .text-home{
     display: flex;
     flex-direction: column;
@@ -88,7 +89,21 @@ color: var(--verde);
 opacity: 0;
 border: none;
 box-shadow: 2px 2px 2px rgb(113, 119, 115);
+transition: 1.2s;
+}
 
+.cv-home:hover{
+    background-color: var(--lila);
+    color: white;
+    border-radius: 50%;
+}
+
+.cv-home:hover .icons-home{
+    color: white;
+}
+
+.cv-home:hover .pdfLink{
+    color: white;
 }
 
 .mail-home{
@@ -102,6 +117,13 @@ box-shadow: 2px 2px 2px rgb(113, 119, 115);
     opacity: 0;
     border: none;
     box-shadow: 2px 2px 2px rgb(113, 119, 115);
+    transition: 1.2s;
+}
+
+.mail-home:hover{
+    background-color: var(--rosa);
+    color: white;
+    border-radius: 50%;
 }
 
 .buttonSkills-home{
@@ -118,6 +140,15 @@ opacity: 0;
 border: none;
 box-shadow: 2px 2px 2px rgb(113, 119, 115);
 
+    font-family: var(--titulo1);
+  
+    transition: 1.2s;
+}
+
+.buttonSkills-home:hover{
+    background-color: var(--verdeClaro);
+    color: white;
+   border-radius: 50%;
 }
 
 .img-home{
@@ -126,9 +157,13 @@ box-shadow: 2px 2px 2px rgb(113, 119, 115);
     
     margin: 10px;
     border-radius: 10px;
-    
+    transition: 2s;
    
    
+}
+
+.img-home:hover{
+    border-radius: 50%;
 }
 
 /* .photo-home{
@@ -188,12 +223,10 @@ box-shadow: 2px 2px 2px rgb(113, 119, 115);
     opacity: 0;  
     color: rgb(59, 59, 59); 
     font-family: var(--titulo1);
-    font-size: 14px;
+    font-size: 20px;
 }
 
-.buttonSkills-home{
-font-family: var(--titulo1);
-}
+
 
 .home-container-sectionPhrase{
     display: flex;
@@ -466,6 +499,7 @@ font-family: var(--titulo1);
        
         margin: 20px;
     }
+
 
     .home-container-sectionTwo{
         

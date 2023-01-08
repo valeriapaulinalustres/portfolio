@@ -97,7 +97,7 @@ function NavBar(props) {
   }, [menu]);
 
   return (
-    <div>
+    <div className='navbar-container'>
       <div
         className="x"
         ref={el => (x = el)}
