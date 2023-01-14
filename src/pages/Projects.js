@@ -32,7 +32,7 @@ function Projects() {
         duration: 3,
         opacity: 1,
         scale: 1,
-        delay: 3,
+        delay: 1,
         stagger: 1,
         translateY: -30,
       })
@@ -103,6 +103,68 @@ function Projects() {
       <section className='projects-section'>
         <h2 className='projects-title'>My projects</h2>
         <div className='projectsBox-container' ref={projectCardsRef} >
+
+
+        <div className='projectBox'>
+            <div className='img-project-container'>
+              <a href="http://epi-six.vercel.app/"  target="_blank">
+                <img src="/epi.jpg" width="160%" className='img-projects' onMouseEnter={onEnterImg} onMouseLeave={onLeaveImg}></img>
+              </a>
+            </div>
+            <div className='projectName-container'>
+              <h2>Epidemiology app - React Js</h2>
+              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalEpi(true)}><HiPlus className='plus' /></button>
+            </div>
+          </div>
+          {modalEpi && <div className='modal'>
+            <div className='window'>
+              <div className='window-header'>
+              <button className='x-projects' onClick={() => setModalEpi(false)}>X</button>
+                <h4>Epi app</h4>
+              </div>
+              <div className='window-text'>
+                <p className='window-description'>This is an app developed to get epidemiology updated information in dashboards, by uploading a .csv file.</p>
+                <p className='window-features'>Features and technologies used:</p>
+                <ul className='window-list'>
+                  <li>React Js</li>
+                  <li>CSS</li>
+                  <li>GSAP</li>
+                  <li>Click <a href="https://www.figma.com/file/GSgULa4mYThyumKxtsipJf/Epi?node-id=0%3A1">here</a> to visit my Figma design UX/UI</li>
+                </ul>
+              </div>
+            </div>
+          </div>}
+
+          <div className='projectBox'>
+            <div className='img-project-container'>
+              <a href="http://dulce-espera.vercel.app/"  target="_blank">
+                <img src="/pregnancy-desktop.jpg" width="100%" className='img-projects' onMouseEnter={onEnterImg} onMouseLeave={onLeaveImg}></img>
+              </a>
+            </div>
+            <div className='projectName-container'>
+              <h2>Dulce Espera App - React + Typescript</h2>
+              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalDulceEspera(true)}><HiPlus className='plus' /></button>
+            </div>
+          </div>
+          {modalDulceEspera && <div className='modal'>
+            <div className='window'>
+              <div className='window-header'>
+              <button className='x-projects' onClick={() => setModalDulceEspera(false)}>X</button>
+                <h4>Dulce Espera App</h4>
+              </div>
+              <div className='window-text'>
+                <p className='window-description'>This is a drug finder and its relationship with pregnancy. Information obtained from the FDA</p>
+                <p className='window-features'>Features and technologies used:</p>
+                <ul className='window-list'>
+                  <li>React Js</li>
+                  <li>CSS</li>
+                  <li>Typescript</li>
+                  <li>FDA Open Api</li>
+                </ul>
+              </div>
+            </div>
+          </div>}
+
 
           <div className='projectBox'>
             <div className='img-project-container'>
@@ -338,65 +400,6 @@ function Projects() {
           </div>}
 
 
-          <div className='projectBox'>
-            <div className='img-project-container'>
-              <a href="http://epi-six.vercel.app/"  target="_blank">
-                <img src="/epi.jpg" width="160%" className='img-projects' onMouseEnter={onEnterImg} onMouseLeave={onLeaveImg}></img>
-              </a>
-            </div>
-            <div className='projectName-container'>
-              <h2>Epidemiology app - React Js</h2>
-              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalEpi(true)}><HiPlus className='plus' /></button>
-            </div>
-          </div>
-          {modalEpi && <div className='modal'>
-            <div className='window'>
-              <div className='window-header'>
-              <button className='x-projects' onClick={() => setModalEpi(false)}>X</button>
-                <h4>Epi app</h4>
-              </div>
-              <div className='window-text'>
-                <p className='window-description'>This is an app developed to get epidemiology updated information in dashboards, by uploading a .csv file.</p>
-                <p className='window-features'>Features and technologies used:</p>
-                <ul className='window-list'>
-                  <li>React Js</li>
-                  <li>CSS</li>
-                  <li>GSAP</li>
-                  <li>Click <a href="https://www.figma.com/file/GSgULa4mYThyumKxtsipJf/Epi?node-id=0%3A1">here</a> to visit my Figma design UX/UI</li>
-                </ul>
-              </div>
-            </div>
-          </div>}
-
-          <div className='projectBox'>
-            <div className='img-project-container'>
-              <a href="http://dulce-espera.vercel.app/"  target="_blank">
-                <img src="/pregnancy-desktop.jpg" width="100%" className='img-projects' onMouseEnter={onEnterImg} onMouseLeave={onLeaveImg}></img>
-              </a>
-            </div>
-            <div className='projectName-container'>
-              <h2>Dulce Espera App - React + Typescript</h2>
-              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalDulceEspera(true)}><HiPlus className='plus' /></button>
-            </div>
-          </div>
-          {modalDulceEspera && <div className='modal'>
-            <div className='window'>
-              <div className='window-header'>
-              <button className='x-projects' onClick={() => setModalDulceEspera(false)}>X</button>
-                <h4>Dulce Espera App</h4>
-              </div>
-              <div className='window-text'>
-                <p className='window-description'>This is a drug finder and its relationship with pregnancy. Information obtained from the FDA</p>
-                <p className='window-features'>Features and technologies used:</p>
-                <ul className='window-list'>
-                  <li>React Js</li>
-                  <li>CSS</li>
-                  <li>Typescript</li>
-                  <li>FDA Open Api</li>
-                </ul>
-              </div>
-            </div>
-          </div>}
 
           <div className='projectBox'>
             <div className='img-project-container'>
