@@ -52,7 +52,7 @@ function NavBar(props) {
       },
       {
         duration: 0.75,
-        y: 50,
+        y: 400,
         ease: 'power3.inOut',
         stagger: 0.3,
         opacity: 1,
@@ -63,7 +63,7 @@ function NavBar(props) {
       {
         duration: 0,
         y: 0,
-        opacity: 0
+        opacity: 0,
       },
       {
         duration: 0.75,
