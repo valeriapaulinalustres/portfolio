@@ -74,11 +74,6 @@ function Projects() {
 
 
 
-
-
-
-
-
   //----each card animations------
   const onEnterImg = ({ currentTarget }) => {
     gsap.to(currentTarget, { scale: 1.3 });
@@ -102,9 +97,6 @@ function Projects() {
 
 
 
-
-
-
   return (
     <div className='projects-container'>
 
@@ -120,14 +112,19 @@ function Projects() {
             </div>
             <div className='projectName-container'>
               <h2>Ecommerce - React js | Firebase</h2>
-              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalEcommerce(true)}><HiPlus className='plus' /></button>
+              <button 
+              className='project-button' 
+              onMouseEnter={onEnterBtn} 
+              onMouseLeave={onLeaveBtn} 
+              onClick={() => setModalEcommerce(true)}>
+                <HiPlus className='plus' />
+                </button>
             </div>
           </div>
           {modalEcommerce && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalEcommerce(false)}>X</button>
-                <h4>MY PASTRY</h4>
+                <h4>Los Lupinos</h4>
               </div>
               <div className='window-text'>
                 <p className='window-description'>It's a gardening ecommerce which consumes information from Firebase. You can filter the products by category, see the details and add to the shopping cart, or if you prefer, it can be saved to the wish list for later. </p>
@@ -147,8 +144,8 @@ function Projects() {
                   <li>Toastify</li>
                   <li>UX/UI Design</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalEcommerce(false)}>X</button>
               </div>
-
             </div>
           </div>}
 
@@ -162,13 +159,18 @@ function Projects() {
             </div>
             <div className='projectName-container'>
               <h2>Animated website - React Js | GSAP</h2>
-              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalPastry(true)}><HiPlus className='plus' /></button>
+              <button 
+              className='project-button' 
+              onMouseEnter={onEnterBtn} 
+              onMouseLeave={onLeaveBtn} 
+              onClick={() => setModalPastry(true)}>
+                <HiPlus className='plus' />
+                </button>
             </div>
           </div>
           {modalPastry && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalPastry(false)}>X</button>
                 <h4>MY PASTRY</h4>
               </div>
               <div className='window-text'>
@@ -187,8 +189,8 @@ function Projects() {
                   <li>UX/UI Design</li>
                   <li>Figma</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalPastry(false)}>X</button>
               </div>
-
             </div>
           </div>}
 
@@ -207,7 +209,6 @@ function Projects() {
           {modalPhoto && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalPhoto(false)}>X</button>
                 <h4>VALERIA PAULINA PHOTOGRAPHY</h4>
               </div>
               <div className='window-text'>
@@ -226,8 +227,8 @@ function Projects() {
                   <li>SEO</li>
                   <li>UX/UI Design</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalPhoto(false)}>X</button>
               </div>
-
             </div>
           </div>}
 
@@ -240,13 +241,18 @@ function Projects() {
             </div>
             <div className='projectName-container'>
               <h2>Menswear website - React js | Firebase</h2>
-              <button className='project-button' onMouseEnter={onEnterBtn} onMouseLeave={onLeaveBtn} onClick={() => setModalMalvina(true)}><HiPlus className='plus' /></button>
+              <button 
+              className='project-button' 
+              onMouseEnter={onEnterBtn} 
+              onMouseLeave={onLeaveBtn} 
+              onClick={() => setModalMalvina(true)}>
+                <HiPlus className='plus' />
+                </button>
             </div>
           </div>
           {modalMalvina && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalMalvina(false)}>X</button>
                 <h4>MALVINA</h4>
               </div>
               <div className='window-text'>
@@ -266,8 +272,8 @@ function Projects() {
                   <li>UX/UI Design</li>
                   <li>Figma</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalMalvina(false)}>X</button>
               </div>
-
             </div>
           </div>}
 
@@ -285,7 +291,6 @@ function Projects() {
           {modalStatus && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalStatus(false)}>X</button>
                 <h4>Status Page</h4>
               </div>
               <div className='window-text'>
@@ -296,6 +301,7 @@ function Projects() {
                   <li>CSS</li>
                   <li>API REST</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalStatus(false)}>X</button>
               </div>
             </div>
           </div>}
@@ -315,7 +321,6 @@ function Projects() {
           {modalCrud && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalCrud(false)}>X</button>
                 <h4>Status Page</h4>
               </div>
               <div className='window-text'>
@@ -327,6 +332,7 @@ function Projects() {
                   <li>API REST: JSONPlaceHolder</li>
                   <li>GSAP</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalCrud(false)}>X</button>
               </div>
             </div>
           </div>}
@@ -346,7 +352,6 @@ function Projects() {
           {modalEpi && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalEpi(false)}>X</button>
                 <h4>Epi app</h4>
               </div>
               <div className='window-text'>
@@ -358,6 +363,7 @@ function Projects() {
                   <li>GSAP</li>
                   <li>Click <a href="https://www.figma.com/file/GSgULa4mYThyumKxtsipJf/Epi?node-id=0%3A1">here</a> to visit my Figma design UX/UI</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalEpi(false)}>X</button>
               </div>
             </div>
           </div>}
@@ -376,7 +382,6 @@ function Projects() {
           {modalDulceEspera && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalDulceEspera(false)}>X</button>
                 <h4>Dulce Espera App</h4>
               </div>
               <div className='window-text'>
@@ -388,6 +393,7 @@ function Projects() {
                   <li>Typescript</li>
                   <li>FDA Open Api</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalDulceEspera(false)}>X</button>
               </div>
             </div>
           </div>}
@@ -406,7 +412,6 @@ function Projects() {
           {modalEcommercePupils && <div className='modal'>
             <div className='window'>
               <div className='window-header'>
-                <button className='x-projects' onClick={() => setModalEcommercePupils(false)}>X</button>
                 <h4>Ecommerce Javascript Vanilla</h4>
               </div>
               <div className='window-text'>
@@ -416,6 +421,7 @@ function Projects() {
                   <li>Javascript</li>
                   <li>CSS</li>
                 </ul>
+                <button className='x-projects' onClick={() => setModalEcommercePupils(false)}>X</button>
               </div>
             </div>
           </div>}
