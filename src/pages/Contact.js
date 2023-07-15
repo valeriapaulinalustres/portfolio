@@ -215,7 +215,7 @@ function Contact() {
               to="./cv-Valeria-Lustres-Frontend-React.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download="cv-Valeria-Lustres-Frontend-React.pdf"
+              download="Fullstack resume Lustres.pdf"
               className='pdfLinkFooter'>
               <HiOutlineDocumentDownload className='icons-cv-footer'>
               </HiOutlineDocumentDownload>

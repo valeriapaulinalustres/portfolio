@@ -255,9 +255,8 @@ function Home() {
             <div className="text-home">
               <p className="im-home">I'm</p>
               <h1></h1>
-              <h2 className="job-home">Frontend React Developer</h2>
-              <h2 className="job-home2">Backend student</h2>
-              <h2 className="job-home2">UX/UI Designer</h2>
+              <h2 className="job-home">Fullstack Developer</h2>
+         
             </div>
 
             <div className="buttons-home">
@@ -618,7 +617,18 @@ function Home() {
           <div className="gorro-texto-home fadeInHomeOne ">
             <FaGraduationCap className="icon-footer " />
             <p className="currentlyStudying-about ">
-              I'm currently studying English and Backend.
+              I'm currently studying English.
+            </p>
+          </div>
+
+          
+          <div className="job-about fadeInHomeOne ">
+            <div className="logo-jobTitle-about">
+              <img src="./logos/inteligentia.png" className="coder-icon"></img>
+              <h3 className="">February 2022 - current</h3>
+            </div>
+            <p className="description-job ">
+              Frontend React Developer at Inteligentia.
             </p>
           </div>
 
@@ -628,7 +638,7 @@ function Home() {
               <h3 className="">June 2022 - current</h3>
             </div>
             <p className="description-job ">
-              I'm working as Javascript tutor teacher.
+              Javascript tutor teacher at Coderhouse.
             </p>
           </div>
 
@@ -636,10 +646,10 @@ function Home() {
             <div className="job-about fadeInHomeOne">
               <div className="logo-jobTitle-about">
                 <img src="./logos/techo.png" className="techo-icon"></img>
-                <h3>May 2022 - current</h3>
+                <h3>May 2022 - January 2023</h3>
               </div>
               <p className="description-job ">
-                I'm collaborating as Frontend, React and Backend Developer.
+                Frontend React Developer at TECHO.
               </p>
             </div>
 
@@ -649,7 +659,7 @@ function Home() {
                 <h3 className="">May 2020 - current</h3>
               </div>
               <p className="description-job ">
-                I'm working as Frontend Developer and Epidemiologist.
+                FullStack Developer at Municipality of Morón.
               </p>
             </div>
           </div>
